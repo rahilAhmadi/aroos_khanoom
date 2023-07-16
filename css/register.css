@@ -1,0 +1,67 @@
+body{
+    direction: rtl;
+}
+.login_form_section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+.form_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 5px 5px 50px 5px #a8a8a858;
+    width:350px;
+    height: 450px;
+    border-radius: 25px;
+    padding: 30px;
+}
+.user, .pass ,.name{
+    display: flex;
+    flex-direction: column;
+}
+.input_user, .input_pass , .input_name{
+    height:45px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #a8a8a8;
+    margin-top: 10px;
+    background-color: #dedede58;
+    transition: 0.4s;
+    padding: 10px;
+}
+.input_user:hover, .input_pass:hover ,.input_name:hover{
+    background-color: #a7a7a758;
+}
+.btn_submit{
+    margin:0 60px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid #4BA7B9;
+    background-color: #4ba7b94c;
+}
+.question{
+    padding-right: 70px;
+    margin-top: 30px;
+}
+.a_register{
+    text-decoration: underline;
+}
+.icon_login_back{
+    width: 12px;
+    height: 12px;
+}
+.back{
+    display: flex;
+    align-items: center;
+    margin-right: -267px;
+    margin-bottom: 20px;
+}
+.back p{
+    font-size: 14px;
+    margin-right: 10px;
+}

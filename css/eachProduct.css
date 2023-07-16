@@ -1,0 +1,115 @@
+body{
+    direction: rtl;
+}
+.header{
+    height: auto;
+}
+.container_each{
+    display: flex;
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.right img{
+    margin: 5px;
+}
+.small_each{
+    display: flex;
+    flex-direction: column;
+}
+.small_each img{
+    height: 175px;
+    width: 150px;
+}
+.big_each img{
+    height: 550px;
+    width: 400px;
+}
+.left{
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    /* align-items: center; */
+}
+.left h1{
+    text-align: center;
+}
+.item_each{
+    display: flex;
+    justify-content: space-around;
+}
+.color,.size{
+    border: 1px solid #9A9A9A;
+    margin: 30px 0;
+    padding: 25px;
+}
+.item_check{
+    display: flex;
+    align-items: center;
+}
+.price{
+    display: flex;
+    margin: 30px 0;
+}
+.price_number{
+    margin: 0 10px;
+}
+.btn_submit{
+    margin: 20px 0;
+    padding:15px;
+    background-color: #33E570;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    transition: .4s;
+}
+.btn_submit:hover{
+    background-color: #fff;
+    color: #33E570;
+    border: 2px solid #33E570;
+}
+input[type=radio] {
+    border: 1px solid #9A9A9A;
+    background-color: #D9D9D9;
+    padding: 0.5em;
+    margin: 0 10px;
+    -webkit-appearance: none;
+  }
+  
+  input[type=radio]:checked {
+    background: url(../asset/img/check-mark.png) no-repeat center center,#D9D9D9;
+    background-size: 30px 28px;
+  }
+  
+  input[type=radio]:focus {
+    outline-color: transparent;
+  }  
+  .radio{
+    display: flex;
+    list-style: none;
+  }
+@media only screen and (max-width: 968px) {
+    .container_each{
+        display: flex;
+        flex-direction: column;
+    }
+    .right,.left{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .left{
+        margin-top: 30px;
+    }
+    .size,.color,.btn_submit{
+        width: 90%;
+    }
+}

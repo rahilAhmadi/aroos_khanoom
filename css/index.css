@@ -1,0 +1,183 @@
+body{
+    direction: rtl;
+}
+/*----------------------- productsCategorization-------------------------- */
+
+.productsCategorization{
+    grid-column: 1/-1;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,280px);
+    padding: 20px 250px;
+    grid-gap: 1.5rem;
+    grid-template-areas:
+        "item_1 item_2 item_4"
+        "item_1 item_3 item_5";
+    position: relative;
+}
+.item1{
+    background: url(../asset/img/ds_lebasAroos.png) rgba(26, 1, 16, 0.651);
+    grid-area: item_1;
+    width: 100%;
+    height: 100%;
+}
+.item2{
+    background: url(../asset/img/ds_kafsh.png) rgba(26, 1, 16, 0.651);
+    grid-area: item_2;
+}
+.item3{
+    background: url(../asset/img/ds_toor.png) rgba(26, 1, 16, 0.651);
+    grid-area: item_3;
+}
+.item4{
+    background: url(../asset/img/ds_taj.png) rgba(26, 1, 16, 0.651);
+    grid-area: item_4;
+}
+.item5{
+    background: url(../asset/img/ds_jewrly.png) rgba(26, 1, 16, 0.651);
+    grid-area: item_5;
+}
+.item{
+    min-height: 100%;
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 25px;
+    text-align: center;
+ }
+.layer:hover{
+    background: rgba(16, 0, 0, 0.728);
+}
+.layer .h3_product,.a_product{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer .a_product{
+    padding: 5px;
+    font-size: 14px;
+    border:2px solid #F385AA;
+    width: 35%;
+    margin: 0 5px;
+    color: #fff;
+    border-radius: 10px;
+}
+.layer:hover .h3_product{
+  bottom: 59%;
+  opacity: 1;
+}
+.layer:hover .p_product{
+    bottom: 53%;
+    opacity: 1;
+}
+.layer:hover .a_product{
+    bottom: 40%;
+    opacity: 1;
+}
+.a_product:hover{
+    background-color: #F385AA;
+    box-shadow:0rem 0rem 4.5rem 1rem #f385aa45;
+    color: #000;
+}
+@media screen and (max-width:1200px){
+    .container{
+        padding:20px 50px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,280px);
+        grid-template-areas: 
+        "item_1 item_3 item_3"
+        "item_1 item_2 item_2"
+        "item_5 item_5 item_4";
+        }
+}
+@media screen and (max-width:600px){
+    .container{
+        padding:20px 100px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,280px);
+        grid-template-areas: 
+        "item_1 item_1"
+        "item_2 item_2"
+        "item_3 item_3"
+        "item_4 item_4"
+        "item_5 item_5";
+        }
+}
+
+/* -------------why us--------------- */
+.container_whyUs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item_whyUs{
+    box-shadow: 0px 0px 1rem #d3d3d3a3;
+    padding: 10px 30px;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+    transition: 0.4s;
+}
+.item_whyUs:hover{
+    box-shadow: 0px 0px 1rem #F385AA;
+}
+.item_whyUs .whyUs_img{
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+}
+/* --------------best Seller-------------- */
+.container_bestSeller{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.item_bestSeller{
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+    transition:ease-in 0.5s;
+}
+.item_bestSeller:hover{
+    box-shadow: inset -4px -3px 50px 20px #161616;
+}
+.item_bs_1{
+    background: url(../asset/img/best_seller_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item_bs_2{
+    background: url(../asset/img/best_seller_2.jpg);
+}
+.item_bs_3{
+    background: url(../asset/img/best_seller_3.jpg);
+}
+.item_bs_4{
+    background: url(../asset/img/best_seller_4.jpg);
+}

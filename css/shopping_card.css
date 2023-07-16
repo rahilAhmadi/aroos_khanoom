@@ -1,0 +1,184 @@
+body{
+    direction: rtl;
+}
+.header {
+    height: auto;
+}
+.content-div{
+    width: 70%;
+}
+.price_products{
+    box-shadow: 0px 0px 1rem #d3d3d3a3;
+    width: 25%;
+    height: 300px;
+    margin: 0px 20px;
+    padding: 40px 0;
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price_item{
+    display: flex;
+    justify-content: space-between;
+}
+.price_desc{
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.small_price{
+    font-size: 12px;
+}
+.container_price_desc{
+    text-align:right;
+}
+section.shapping_card{
+    display: flex;
+}
+.shapping_card{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.shapping_card .card{
+    padding: 0 40px;
+    overflow: hidden;
+    border: 1px solid #d3d3d3a3;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.container_card_desc{
+    display: flex;
+}
+.img{
+    height: 170px;
+    width: 150px;
+    background-blend-mode: multiply;
+    border-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px;
+    margin-left: 30px;
+    background-size: cover;
+    transition: 0.4s;
+    border: 1px solid #7a7a7a;
+    padding: 5px 15px;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+.box_content{
+    width: 100%;
+}
+.topic_product{
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.title_product{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+.btn_shopping_product{
+    padding: 10px 30px;
+    background-color: #D0E8ED;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+.btn_shopping_product:hover{
+    background-color: #fff;
+    color: #69abb9;
+    border: 3px solid #D0E8ED;
+}
+.star{
+    display: flex;
+}
+.top_header{
+    display: flex;
+    justify-content: space-between;
+}
+.top_header img{
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
+a.container_card_desc {
+    width: 100%;
+}
+ @media only screen and (max-width: 992px) {
+    .shapping_card{
+        display: flex;
+        justify-content: center;
+    }
+    .content-div{
+        width: 100%;
+        margin: 10px;
+    }
+    .card .img{
+        height: 400px;
+         width: 320px;
+    }
+    .card h2{
+        font-size: 20px;
+    }
+    .filter{
+        display: none;
+    }
+    .price_products{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .price_desc{
+        font-size: 15px;
+    }
+    .card .img{
+        height: 350px;
+        width: 280px;
+    }
+    
+    .contentshoppCard{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        padding: 0;
+        width: 30%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .dasteBandi{
+        width: auto;
+    }
+    .item_daste img{
+        width: 50px;
+        height: 50px;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+    .card{
+        width: 90%;
+        margin: 0;
+    }
+    .card .img{
+        height: 350px;
+        width: 240px;
+    }
+    .item_daste img{
+        width: 30px;
+        height: 30px;
+    }
+    .card h2{
+        font-size: 16px;
+    }
+    
+}

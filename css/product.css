@@ -1,0 +1,181 @@
+body{
+    direction: rtl;
+}
+.header{
+    height: auto;
+}
+.top_product{
+    text-align: center;
+}
+
+.title_product{
+    text-align: center;
+    padding: 25px;
+    font-size: 27px;
+    font-weight: 900;
+}
+.product_title_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.product_title_box img{
+    width: 100px;
+    height: 18px;
+}
+.show_more{
+    margin-left: 50px;
+    border-bottom: 2px solid #F012BE;
+}
+.box_content{
+    padding: 0 8px;
+}
+.content_product{
+    width: 100%;
+}
+.top_product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 30px;
+
+}
+.contentWeddingDress , .contentJwerly,.contentShoes ,.contentToor ,.contentTaj{
+    display: flex;
+    justify-content: center;
+}
+.contentWeddingDress .card , .contentJwerly .card ,.contentShoes .card ,.contentToor .card ,.contentTaj .card{
+    margin: 0 20px;
+    box-shadow: 0px 0px 1rem #d3d3d3a3;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+.img{
+    height: 350px;
+    background-blend-mode: multiply;
+    width: 280px;
+    border-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px;
+    background-size: cover;
+    transition: 0.4s;
+}
+.img:hover{
+    transform: scale(1.1);
+}
+.img_product{
+    z-index: 999;
+    margin: 100px;
+}
+.img_pink{
+    background: rgba(255, 224, 241, 0.651);
+    background-size: cover;
+    background-position: top;
+}
+.img_blue{
+    background: rgba(224, 255, 254, 0.651);
+    background-size: cover;
+    background-position: top;
+}
+.img_pink img , .img_blue img{
+    width: 90%;
+    margin-right: 10px;
+    margin-top: 0px;
+    height: 90%;
+}
+.productDesc{
+    margin: 10px 0;
+    color: #646464;
+    font-size: 15px;
+}
+.star{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.star i{
+    font-size: 18px;
+    margin: 0 10px 0 20px;
+}
+@media only screen and (max-width: 768px) {
+    .contentWeddingDress , .contentJwerly,.contentShoes ,.contentToor ,.contentTaj{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box_content{
+        text-align: center;
+    }
+    .contentWeddingDress .card , .contentJwerly .card ,.contentShoes .card ,.contentToor .card ,.contentTaj .card{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .img {
+        margin: auto;
+        /* margin-top: 10px; */
+        display: flex;
+        justify-content: center;
+        border-radius: 0px;
+    }
+    .top_product{
+        text-align: right;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .title_product{
+        font-size: 20px;
+    }
+    .before_title,.after_title{
+        display: none;
+    }
+    .img_pink ,.img_blue{
+        width: 100%;
+    }
+    .img_pink img, .img_blue img {
+        width: 250px;
+        height: 90%;
+        margin: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .contentWeddingDress ,.contentJwerly ,.contentShoes ,.contentToor ,.contentTaj{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box_content{
+        text-align: center;
+    }
+    .card{
+        width: 35%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .img {
+        margin: auto;
+        /* margin-top: 10px; */
+        display: flex;
+        justify-content: center;
+        border-radius: 0px;
+    }
+    .img_pink ,.img_blue{
+        width: 100%;
+    }
+    .img_pink img, .img_blue img {
+        width: 250px;
+        height: 90%;
+        margin: 0px;
+    }
+
+}
+
+
