@@ -15,22 +15,43 @@
             <img class="icon_login_back" src="asset/icon/right-arrow.png">
         <p>بازگشت</p>
         </a>
-        <form class="form_login" action="">
+        <div id="snackbar-vms"></div>
+        <form class="form_login" action="register.php" method="post">
             <div class="name">
                 <label class="lbl_name">نام:</label>
-                <input class="input_name" type="text">
+                <input class="input_name" name="input_name" id="name_user_rigister" onchange="validate(event)" type="text">
             </div>
             <div class="user">
                 <label class="lbl_user">نام کاربری:</label>
-                <input class="input_user" type="text">
+                <input class="input_user" name="input_user" type="text">
             </div>
             <div class="pass">
                 <label class="lbl_pass">رمز عبور:</label>
-                <input class="input_pass" type="password">
+                <input class="input_pass" name="input_pass" onchange="validatepass(event)" type="password">
             </div>
-            <input class="btn_submit" type="submit" value="ثبت نام">
+            <input  class="btn_submit" type="submit" value="ثبت نام">
             <p class="question">اکانت دارید؟ <a href="login.html"  class="pink a_register">ورود</a></p>
         </form>
        </section>
+       <script>
+        function validate(event){
+            console.log("changed");
+            if(event.target.value.length<3){
+            var x = document.getElementById("snackbar-vms")
+            x.innerHTML="خطا!!! نام شما باید حداقل 3 کاراکتر باشد.";
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+        }
+        function validatepass(event){
+           let password= event.target.value;
+            if (password.includes("@")!=true || password.includes("#")!=true || password.includes("&")){
+                var x = document.getElementById("snackbar-vms")
+                x.innerHTML="پسورد انتخابی شما حتما باید شامل  یکی از کاراکتر های @  و یا # و یا & باشد";
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+        }
+       </script>
 </body>
 </html>

@@ -7,6 +7,15 @@ body{
 .content-div{
     width: 70%;
 }
+.top_header{
+    display: flex;
+    justify-content: space-between;
+}
+.top_header img{
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
 .price_products{
     box-shadow: 0px 0px 1rem #d3d3d3a3;
     width: 25%;
@@ -18,6 +27,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.box_content{
+    width: 100%
+;
 }
 .price_item{
     display: flex;
@@ -47,6 +60,7 @@ section.shapping_card{
     border: 1px solid #d3d3d3a3;
     width: 100%;
     padding: 10px;
+    display: flex;
     margin-bottom: 20px;
 }
 .container_card_desc{
@@ -70,9 +84,6 @@ section.shapping_card{
     width: 100%;
     height: 100%;
 }
-.box_content{
-    width: 100%;
-}
 .topic_product{
     margin-left: 10px;
     font-weight: bolder;
@@ -88,27 +99,9 @@ section.shapping_card{
     background-color: #D0E8ED;
     border-radius: 10px;
     margin-top: 20px;
-    transition: 0.4s;
-}
-.btn_shopping_product:hover{
-    background-color: #fff;
-    color: #69abb9;
-    border: 3px solid #D0E8ED;
 }
 .star{
     display: flex;
-}
-.top_header{
-    display: flex;
-    justify-content: space-between;
-}
-.top_header img{
-    width: 24px;
-    height: 24px;
-    margin: 10px;
-}
-a.container_card_desc {
-    width: 100%;
 }
  @media only screen and (max-width: 992px) {
     .shapping_card{

@@ -15,14 +15,14 @@
         <img class="icon_login_back" src="asset/icon/right-arrow.png">
     <p>بازگشت</p>
     </a>
-    <form class="form_login" action="">
+    <form class="form_login" action="actionLogin.php" method="post">
         <div class="user">
             <label class="lbl_user">نام کاربری:</label>
-            <input class="input_user" type="text">
+            <input class="input_user" name="input_user" type="text">
         </div>
         <div class="pass">
             <label class="lbl_pass">رمز عبور:</label>
-            <input class="input_pass" type="password">
+            <input class="input_pass" name="input_pass" type="password">
         </div>
         <input class="btn_submit" type="submit" value="ورود">
         <p class="question">اکانت ندارید؟ <a href="register.html"  class="pink a_register">ثبت نام</a></p>

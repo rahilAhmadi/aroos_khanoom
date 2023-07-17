@@ -55,3 +55,4 @@ rangeInput.forEach((input) => {
     }
   });
 });
+
