@@ -3,27 +3,27 @@ const overlay=document.querySelector(".overlay");
 const bars=document.getElementById("bars");
 
 bars.addEventListener("click",function(){
-     menu.style.right="0";
-    overlay.style.display="block";
+  menu.style.right="0";
+  overlay.style.display="block";
 })
 overlay.addEventListener("click",function (){
-    menu.style.right="-200px";
-    overlay.style.display="none";
+  menu.style.right="-200px";
+  overlay.style.display="none";
 });
 
 
 
 // range of price
 const rangeInput = document.querySelectorAll(".range-input input"),
-  priceInput = document.querySelectorAll(".price-input input"),
-  range = document.querySelector(".slider .progress");
+priceInput = document.querySelectorAll(".price-input input"),
+range = document.querySelector(".slider .progress");
 let priceGap = 1000;
 
 priceInput.forEach((input) => {
   input.addEventListener("input", (e) => {
     let minPrice = parseInt(priceInput[1].value),
-      maxPrice = parseInt(priceInput[0].value);
-
+    maxPrice = parseInt(priceInput[0].value);
+    
     if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[0].max) {
       if (e.target.className === "input-min") {
         rangeInput[1].value = minPrice;
@@ -39,8 +39,8 @@ priceInput.forEach((input) => {
 rangeInput.forEach((input) => {
   input.addEventListener("input", (e) => {
     let minVal = parseInt(rangeInput[0].value),
-      maxVal = parseInt(rangeInput[1].value);
-
+    maxVal = parseInt(rangeInput[1].value);
+    
     if (maxVal - minVal < priceGap) {
       if (e.target.className === "range-min") {
         rangeInput[0].value = maxVal - priceGap;

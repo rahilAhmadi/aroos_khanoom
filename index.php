@@ -10,7 +10,7 @@
     <title>aroos khanoom</title>
 </head>
 <body>
-        <section class="header">
+        <section class="header" id="header">
            <?php require ('header.php'); ?>
             <div class="content">
                 <div class="contentImg">
@@ -130,10 +130,6 @@
         <script src="main.js"></script>
 
     <script>
-        const menu=document.querySelector(".menuRight ul");
-        const overlay=document.querySelector(".overlay");
-        const bars=document.getElementById("bars");
-
         bars.addEventListener("click",function(){
              menu.style.right="0";
             overlay.style.display="block";
@@ -142,6 +138,12 @@
             menu.style.right="-200px";
             overlay.style.display="none";
         });
+
+        //fade of header
+        let header=document.getElementById('header');
+        window.addEventListener('scroll',function(){
+        header.style.opacity=1-window.pageYOffset/600;
+})
     </script>
 </body>
 </html>
