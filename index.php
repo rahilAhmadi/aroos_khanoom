@@ -127,7 +127,7 @@
             <div class="copyRight">تمامی حقوق این سایت برای مزون <span class="pink">عروس خانوم </span> محفوظ است</div>
         </section>
 
-        <script src="main.js"></script>
+        <script src="js/main.js"></script>
 
     <script>
         bars.addEventListener("click",function(){
