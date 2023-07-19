@@ -235,14 +235,24 @@ li.action {
     height: 400px;
 }
 
+@keyframes upDown {
+    50%{
+        top:-40px;
+    }
+    100%{
+        top: -57px;
+    }
+}
 .content .contentImg .img2 {
     position: absolute;
     top: -57px;
     left: 85px;
     width: 671px;
     height: 685px;
+    animation-name: upDown;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
-
 .content .contentDesc {
     display: flex;
     flex-direction: column;
