@@ -23,18 +23,57 @@ body{
     display: flex;
     flex-direction: column;
 }
+.password_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .input_user, .input_pass{
     height:45px;
+    width: 100%;
     border-radius: 5px;
     outline: none;
     border: 1px solid #a8a8a8;
     margin-top: 10px;
     background-color: #dedede58;
     transition: 0.4s;
+    padding: 5px;
+}
+.input_pass{
+    margin-right: 10px;
 }
 .input_user:hover, .input_pass:hover{
     background-color: #a7a7a758;
 }
+.toggle{
+    margin-top: 12px;
+    width: 30px;
+}
+.fa-eye-slash{
+    display: none;
+  }
+
+  .toggle svg{
+    color: #505050;
+    opacity: .7;
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    font-size: 19px;
+}
+  .toggle svg:hover{
+    opacity: 1;
+  }
+
+  .hide .fa-eye{
+    display: none;
+  }
+  .hide .fa-eye-slash{
+    display: block;
+  }
 .btn_submit{
     margin:0 60px;
     height: 45px;
