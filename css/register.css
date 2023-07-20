@@ -23,21 +23,62 @@ body{
     display: flex;
     flex-direction: column;
 }
-.input_user, .input_pass , .input_name{
+.password_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input_user, .input_pass, .input_name{
     height:45px;
+    width: 100%;
     border-radius: 5px;
     outline: none;
     border: 1px solid #a8a8a8;
     margin-top: 10px;
     background-color: #dedede58;
     transition: 0.4s;
-    padding: 10px;
+    padding: 5px;
+}
+.input_pass{
+    padding-left: 40px;
 }
 .input_user:hover, .input_pass:hover ,.input_name:hover{
     background-color: #a7a7a758;
 }
+.toggle{
+    margin-top: 15px;
+    width: 30px;
+    position: absolute;
+    left: 0px;
+}
+#slash-eye{
+    display: none;
+  }
+
+  .toggle svg{
+    color: #505050;
+    opacity: .7;
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    font-size: 19px;
+}
+  .toggle svg:hover{
+    opacity: 1;
+  }
+
+  .hide .fa-eye{
+    display: none;
+  }
+  .hide #slash-eye{
+    display: block;
+  }
 .btn_submit{
-    margin:0 60px;
+    margin:20px 60px;
     height: 45px;
     cursor: pointer;
     border-radius: 50px;
@@ -46,7 +87,6 @@ body{
 }
 .question{
     padding-right: 70px;
-    margin-top: 30px;
 }
 .a_register{
     text-decoration: underline;

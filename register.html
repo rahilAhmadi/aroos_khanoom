@@ -27,7 +27,13 @@
             </div>
             <div class="pass">
                 <label class="lbl_pass">رمز عبور:</label>
-                <input class="input_pass" name="input_pass" onchange="validatepass(event)" type="password">
+                <div class="password_box">
+                    <div class="toggle">
+                        <i class="far fa-eye"></i>
+                        <i id="slash-eye" class="far fa-eye-slash"></i>
+                    </div>
+                    <input class="input_pass" id="input_pass"  name="input_pass" type="password">
+                </div>
             </div>
             <input  class="btn_submit" type="submit" value="ثبت نام">
             <p class="question">اکانت دارید؟ <a href="login.html"  class="pink a_register">ورود</a></p>
@@ -52,6 +58,20 @@
                 setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
             }
         }
+
+
+        //password button
+        const toggle=document.querySelector('.toggle');
+        const input=document.getElementById('input_pass');
+        toggle.addEventListener('click',function(){
+          if(input.type==="password"){
+                input.setAttribute('type','text');
+                toggle.classList.add('hide');
+         }else{
+              input.setAttribute('type','password');
+              toggle.classList.remove('hide');
+         }
+        })
        </script>
 </body>
 </html>

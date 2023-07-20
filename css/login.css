@@ -27,6 +27,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .input_user, .input_pass{
     height:45px;
@@ -40,14 +41,16 @@ body{
     padding: 5px;
 }
 .input_pass{
-    margin-right: 10px;
+    padding-left: 40px;
 }
 .input_user:hover, .input_pass:hover{
     background-color: #a7a7a758;
 }
 .toggle{
-    margin-top: 12px;
+    margin-top: 15px;
     width: 30px;
+    position: absolute;
+    left: 0px;
 }
 .fa-eye-slash{
     display: none;
