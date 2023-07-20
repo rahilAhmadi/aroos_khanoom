@@ -2,6 +2,8 @@ const menu=document.querySelector(".menuRight ul");
 const overlay=document.querySelector(".overlay");
 const bars=document.getElementById("bars");
 
+
+//hambergur menu handler
 bars.addEventListener("click",function(){
   menu.style.right="0";
   overlay.style.display="block";
@@ -11,7 +13,11 @@ overlay.addEventListener("click",function (){
   overlay.style.display="none";
 });
 
-
+  //fade of header
+  let header=document.getElementById('header_index');
+  window.addEventListener('scroll',function(){
+  header.style.opacity=1-window.pageYOffset/600;
+})
 
 // range of price
 const rangeInput = document.querySelectorAll(".range-input input"),

@@ -10,7 +10,7 @@
     <title>aroos khanoom</title>
 </head>
 <body>
-        <section class="header">
+        <section class="header" id="header_index">
             <div class="overlay"></div>
             <div class="menu"> 
                 <div class="menuRight">
@@ -149,20 +149,5 @@
         </section>
 
         <script src="js/main.js"></script>
-
-    <script>
-        const menu=document.querySelector(".menuRight ul");
-        const overlay=document.querySelector(".overlay");
-        const bars=document.getElementById("bars");
-
-        bars.addEventListener("click",function(){
-             menu.style.right="0";
-            overlay.style.display="block";
-        })
-        overlay.addEventListener("click",function (){
-            menu.style.right="-200px";
-            overlay.style.display="none";
-        });
-    </script>
 </body>
 </html>
