@@ -10,7 +10,7 @@
     <title>aroos khanoom</title>
 </head>
 <body>
-        <section class="header" id="header">
+        <section class="header" id="header_index">
             <img src="asset/img/buterfly3.png" class="buterfly" alt="">
            <?php require ('header.php'); ?>
             <div class="content">

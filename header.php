@@ -41,7 +41,7 @@ echo '
                 <ul>
                     <li></a></li>
                     <li>
-                    <a href="login.html" class="buttonLogin btn_menu_a">ورود/عضویت</a>
+                    <a href="login.html" class="buttonLogin vorod_btn btn_menu_a">ورود/عضویت</a>
                     <a href="login.html" class="logoLogin btn_menu_a"><img src="asset/icon/user.png" alt="user"></a>
                     </li>
                 </ul>
@@ -50,8 +50,8 @@ echo '
       echo ' </div>';
       ?>
       <script>
+       const togglemenu = document.querySelector('.menu-box');
        function toggleMenu() {
-        const togglemenu = document.querySelector('.menu-box');
-        togglemenu.classList.toggle("active");
+           togglemenu.classList.toggle("active");
     }
       </script>

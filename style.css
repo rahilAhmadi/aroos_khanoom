@@ -56,6 +56,8 @@ a {
 
 .header {
     height: 100vh;
+}
+#header_index{
     position: relative;
     background: url('asset/img/bgHeaderAll3.png');
     background-repeat: no-repeat;
@@ -134,18 +136,21 @@ a {
 }
 
 .menu .menuLeft ul li .btn_menu_a {
-    background-color: #D0E8ED;
+    background-color: rgba(198,155,219,1);;
     padding: 10px 60px;
     border-radius: 10px;
     width: 200px;
     margin-left: 30px;
 }
-
+.vorod_btn{
+    padding: 10px 40px !important;
+}
 .menu .menuLeft ul li .action_button {
     width: 120px;
     background-color: #fff;
-    border: 3px solid #D0E8ED;
+    border: 3px solid rgba(198,155,219,0.5);
     position: relative;
+    padding: 10px 60px;
 }
 
 .menu .menuLeft ul li img {
@@ -178,7 +183,6 @@ li.action {
     position: absolute;
     top: -23px;
     right: 4px;
-    background-color: #fff;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -200,15 +204,13 @@ li.action {
 
 .menu-box.active {
     opacity: 1;
-    width: 100%;
 }
-
 .menu-box::before {
     content: '';
     position: absolute;
-    top: -12px;
+    top: -10px;
     right: 8px;
-    background-color: #D0E8ED;
+    background-color: rgba(198,155,219,1);
     width: 30px;
     height: 30px;
     transform: rotate(45deg);
@@ -270,6 +272,7 @@ li.action {
     flex-direction: column;
     width: 30%;
     margin-right: 100px;
+    z-index: 999;
 }
 
 .content .contentDesc h1 {
