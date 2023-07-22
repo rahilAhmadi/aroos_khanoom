@@ -11,6 +11,7 @@
 </head>
 <body>
         <section class="header" id="header">
+            <img src="asset/img/buterfly3.png" class="buterfly" alt="">
            <?php require ('header.php'); ?>
             <div class="content">
                 <div class="contentImg">
@@ -126,7 +127,7 @@
             </div>
             <div class="copyRight">تمامی حقوق این سایت برای مزون <span class="pink">عروس خانوم </span> محفوظ است</div>
         </section>
-
+        <script src="js/index.js"></script>
         <script src="js/main.js"></script>
 
     <script>
@@ -140,7 +141,6 @@
         });
 
         //fade of header
-        let header=document.getElementById('header');
         window.addEventListener('scroll',function(){
         header.style.opacity=1-window.pageYOffset/600;
 })
