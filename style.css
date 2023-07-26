@@ -286,13 +286,45 @@ li.action {
     margin: 40px 0;
 }
 
-.content .contentDesc a {
+.content .contentDesc .start_btn {
     border: 3px solid #F385AA;
     width: 150px;
     padding: 8px;
     border-radius: 10px;
     text-align: center;
     transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+span.span_click_btn{
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: clickEffect 1s infinite;
+    -webkit-animation: clickEffect 1s infinite;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+@keyframes clickEffect{
+    0%{
+        opacity: 0.9;
+        width: 0;
+        height: 0;
+    }
+    100%{
+        opacity: 0;
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .content .contentDesc a:hover {
