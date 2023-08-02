@@ -38,9 +38,9 @@
                     <img src="asset/img/' . $IdArray[0] . '/' . $row['picA'] . '" alt="big_each">
                 </div>
                 <div class="small_each">
-                    <img src="asset/img/' . $IdArray[0] . '/' . $row['picA'] . '"alt="small_each">
-                    <img src="asset/img/' . $IdArray[0] . '/' . $row['picB'] . '" alt="small_each">
-                    <img src="asset/img/' . $IdArray[0] . '/' . $row['picC'] . '" alt="small_each">
+                    <img class="small_img" onclick="showImage("asset/img/' . $IdArray[0] . '/' . $row['picA'] . '")" src="asset/img/' . $IdArray[0] . '/' . $row['picA'] . '"alt="small_each">
+                    <img class="small_img" onclick="showImage("asset/img/' . $IdArray[0] . '/' . $row['picB'] . '" alt="small_each")" src="asset/img/' . $IdArray[0] . '/' . $row['picB'] . '" alt="small_each">
+                    <img class="small_img" onclick="showImage("asset/img/' . $IdArray[0] . '/' . $row['picC'] . '" alt="small_each")" src="asset/img/' . $IdArray[0] . '/' . $row['picC'] . '" alt="small_each">
                 </div>
             </div>
             <div class="left">
@@ -146,6 +146,7 @@
         </div>
         <div class="copyRight">تمامی حقوق این سایت برای مزون <span class="pink">عروس خانوم </span> محفوظ است</div>
     </section>
+    <script src="js/eachProduct.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

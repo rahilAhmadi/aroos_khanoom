@@ -16,7 +16,7 @@ overlay.addEventListener("click",function (){
   //fade of header
   let header=document.getElementById('header_index');
   window.addEventListener('scroll',function(){
-  header.style.opacity=1-window.pageYOffset/600;
+  // header.style.opacity=1-window.pageYOffset/600;
 })
 
 // range of price
