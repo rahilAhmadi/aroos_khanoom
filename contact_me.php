@@ -27,8 +27,13 @@
               <input type="text" placeholder="موضوع">
             </div>
             <div class="contact-us-input-bottom">
-              <textarea  cols="30" rows="10" placeholder="چیزی بنویسید..."></textarea>
+              <textarea  id="textarea" cols="30" rows="10" maxlength="500" placeholder="چیزی بنویسید..."></textarea>
               <input type="submit" class="button" value="ارسال">
+            </div>
+            <div class="remaining">
+                <div id="textarea-remaining">
+                    500 باقی مانده
+                </div>
             </div>
           </div>
         </form>
@@ -73,6 +78,8 @@
         </div>
         <div class="copyRight">تمامی حقوق این سایت برای مزون <span class="pink">عروس خانوم </span> محفوظ است</div>
     </section>
+
+    <script src="js/contact_me.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
