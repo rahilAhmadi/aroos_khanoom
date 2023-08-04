@@ -153,6 +153,7 @@ body{
 /* --------------comment------------------ */
 .comments_section{
     margin: 150px 0;
+    position: relative;
 }
 .comments{
     display: flex;
@@ -162,21 +163,31 @@ body{
     padding: 0 150px;
     position: relative;
 }
-.comments::before{
-    content: url(../asset/icon/prev_comment.svg);
+.prev_comment{
+    background: url(../asset/icon/prev_comment.svg);
     position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 40px;
     height: 40px;
     top: 40%;
     left: 80px;
+    cursor: pointer;
 }
-.comments::after{
-    content: url(../asset/icon/next_comment.svg);
+.next_comment{
+    background: url(../asset/icon/next_comment.svg);
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     width: 40px;
     height: 40px;
     top: 40%;
     right: 40px;
+    cursor: pointer;
+    z-index: 999;
 }
 .comments .comment{
     display: flex;
@@ -189,6 +200,12 @@ body{
     padding: 40px 20px;
     position: relative;
     padding-top: 90px;
+}
+.comment.hide{
+    display: none;
+}
+.comment.show{
+    display: block;
 }
 .comments .comment p{
     color: #555;

@@ -28,3 +28,38 @@ buttonStart.addEventListener('mouseover',function(event){
     }, 1000);
 
 })
+
+
+// comment sectoin
+const next=document.querySelector('.next_comment');
+const prev=document.querySelector('.prev_comment');
+const comments_box=document.querySelector('.comments').children;
+let index=0;
+
+next.onclick=()=>{
+    if(index==comments_box.length){
+        index=0;
+    }
+    if(comments_box[comments_box.length-1].classList.contains('show')){
+        next.style.display="none"
+    }
+    comments_box[index].classList.add('hide');
+    comments_box[index+3].classList.remove('hide');
+    comments_box[index+3].classList.add('show');
+    index+=1;
+    console.log(index);
+}
+prev.onclick=()=>{
+    if(index==0){
+        index=comments_box.length-1;
+    }else{
+        index--;
+        console.log(index);
+    }
+    if(next.style.display=="none"){
+        next.style.display="block";
+        comments_box[comments_box.length-1].classList.remove('show');
+        comments_box[comments_box.length-1].classList.add('hide');
+        comments_box[comments_box.length-index].classList.add('show');
+    }
+}
