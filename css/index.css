@@ -200,11 +200,12 @@ body{
     padding: 40px 20px;
     position: relative;
     padding-top: 90px;
+    display: none;
 }
 .comment.hide{
     display: none;
 }
-.comment.show{
+.comment.visible{
     display: block;
 }
 .comments .comment p{
