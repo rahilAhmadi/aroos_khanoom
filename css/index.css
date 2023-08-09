@@ -213,6 +213,7 @@ body{
     text-align: justify;
     line-height: 30px;
     font-size: 16px;
+    height: 250px;
 }
 .comments .comment p i{
     color: #F385AA;

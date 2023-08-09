@@ -81,6 +81,91 @@
                 </div>
             </div>
         </section>
+        <section class="comments_section">
+        <h1 class="title">نظرات مشتریان <span class="pink">عروس خانوم</span></h1>
+        <div class="next_comment"></div>
+        <div class="comments">
+            <div class="comment">
+                <img src="asset/img/comment_1.jpg" alt="">
+                <p>
+                    <i class="fa-solid fa-quote-right"></i>
+                    سلام من از لباس عروس مدل بلند نیم کلوش و کفش پاشنه بلند 5 سانتی با گل گیپوری رو از این سایت خریداری کردم
+                    خب اولش خیلی استرس داشتم چون همه میدونن که لباس عروس یه انتخاب خیلی مهمه برای بهترین شب زندگی آدم رو
+                    نمیشه ریسک کرد برای اینکه یه بار خوب در نیاد ولی شاید باورتون نشه از خرید حضوری برای من خیلی بهتر بود و
+                    واقعا احساس خوشگلی رو تو شب عروسیم احساس کردم مرسی از عوامل عروس خانوم
+                    <i class="fa-solid fa-quote-left"></i>
+                </p>
+                <div class="comment_name">
+                    <h3>سمانه قاسمی</h3>
+                    <span>3 ماه پیش خریداری شده</span>
+                </div>
+            </div>
+            <div class="comment">
+                <img src="asset/img/comment_2.jpg" alt="">
+                <p>
+                    <i class="fa-solid fa-quote-right"></i>
+                    یه چیزی که باعث شد من این سایت رو برای خرید لباس عروسم انتخاب کنم کیفیت بالای محصولات و نشون دادن عکسای خوب از اون محصول و قیمت به نسبت مناسب بود که منو جذب خودش کرد و اصلا از خریدم پشیمون نشدم به همه پیشنهاد میدم بیان تو این سایت بهترین شب زندگیشونو به یه سطح خیلی بهتر برسونن و مثل خورشید بدرخشن.
+                    <i class="fa-solid fa-quote-left"></i>
+                </p>
+                <div class="comment_name">
+                    <h3>طناز احمدزاده</h3>
+                    <span>2 هفته پیش خریداری شده</span>
+                </div>
+            </div>
+            <div class="comment">
+                <img src="asset/img/comment_3.jpg" alt="">
+                <p>
+                    <i class="fa-solid fa-quote-right"></i>
+                    من لباس عروس کوتاه و تاج شب عروسیم رو از اینجا خرید کردم که بشدت خوشگل بودن و یه چیزی که باعث شد بیام و نظر خودمو ثبت کنم تو این سایت این بود که پشتیبانی بشدت قوی سایت باعث شد من اصلا ناراضی نباشم با اینکه لباس عروس من یه ایراد جزئی داشت ولی به محض اینکه زنگ زدم بررسی کردن و برام درستش کردن واقعا کاش سایتای خوب مثل عروس خانوم بیشتر بشه
+                    <i class="fa-solid fa-quote-left"></i>
+                </p>
+                <div class="comment_name">
+                    <h3>مهسا حسنی مهر</h3>
+                    <span>1 ماه پیش خریداری شده</span>
+                </div>
+            </div>
+            <div class="comment">
+                <img src="asset/img/comment_4.jpg" alt="">
+                <p>
+                    <i class="fa-solid fa-quote-right"></i>
+                    سلام من از لباس عروس مدل بلند نیم کلوش و کفش پاشنه بلند 5 سانتی با گل گیپوری رو از این سایت خریداری کردم
+                    خب اولش خیلی استرس داشتم چون همه میدونن که لباس عروس یه انتخاب خیلی مهمه برای بهترین شب زندگی آدم رو
+                    نمیشه ریسک کرد برای اینکه یه بار خوب در نیاد ولی شاید باورتون نشه از خرید حضوری برای من خیلی بهتر بود و
+                    واقعا احساس خوشگلی رو تو شب عروسیم احساس کردم مرسی از عوامل عروس خانوم
+                    <i class="fa-solid fa-quote-left"></i>
+                </p>
+                <div class="comment_name">
+                    <h3>مهرانه احمدی</h3>
+                    <span>2 روز پیش خریداری شده</span>
+                </div>
+            </div>
+            <div class="comment">
+                <img src="asset/img/comment_8.jpg" alt="">
+                <p>
+                    <i class="fa-solid fa-quote-right"></i>
+                    سلام من برای عروسی مون تور و اکسسوری های خانمم رو از عروس خانوم خرید و بشدت بعد از دیدن هدیه هایی که براش خریده بودم سوپرایز شد و خوشش اومدهم بود بنظرم تنوع محصولات و کیفیت خیلی خوبشون باعث میشه هر کسی میاد به این سایت دست خالی برنگرده.
+                    <i class="fa-solid fa-quote-left"></i>
+                </p>
+                <div class="comment_name">
+                    <h3>متین بهرام پور</h3>
+                    <span>1 سال پیش خریداری شده</span>
+                </div>
+            </div>
+            <div class="comment">
+                <img src="asset/img/comment_6.jpg" alt="">
+                <p>
+                    <i class="fa-solid fa-quote-right"></i>
+                    من خیلی استرس داشتم که نتونم اکسسوری های خاص برای عروسیم پیدا کنم ولی وقتی دوسم عروس خانوم رو بهم معرفی کرد دیگه کلا نظرم عوض شد با اینکه خودم بشدت مخالف خرید اینترنتی هستم ولی بشدت راضیم و کلا نظر من راجب خریدای اینترنتی عوض شد.
+                    <i class="fa-solid fa-quote-left"></i>
+                </p>
+                <div class="comment_name">
+                    <h3>معصومه قربان نژاد</h3>
+                    <span>4 ماه پیش خریداری شده</span>
+                </div>
+            </div>
+            </div>
+            <div class="prev_comment"></div>
+        </section>
         <section class="bestSeller">
             <h1 class="title">پر فروش های <span class="pink">عروس خانوم</span>:</h1>
             <div class="container_bestSeller">
