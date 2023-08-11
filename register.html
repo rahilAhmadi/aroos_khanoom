@@ -11,12 +11,16 @@
 </head>
 <body>
     <section class="login_form_section">
+        <div class="alert-box hidden">
+            <span class="close-btn">&times</span>
+            <p>برای ثبت نام باید همه فیلد ها پر باشد.</p>
+        </div>
         <a class="back" href="index.html">
             <img class="icon_login_back" src="asset/icon/right-arrow.png">
         <p>بازگشت</p>
         </a>
         <div id="snackbar-vms"></div>
-        <form class="form_login" action="register.php" method="post">
+        <form class="form_login" action="register.php" method="post" autocomplete="off">
             <div class="name">
                 <label class="lbl_name">نام:</label>
                 <input class="input_name" name="input_name" id="name_user_rigister" onchange="validate(event)" type="text">
@@ -32,46 +36,14 @@
                         <i class="far fa-eye"></i>
                         <i id="slash-eye" class="far fa-eye-slash"></i>
                     </div>
-                    <input class="input_pass" id="input_pass"  name="input_pass" type="password">
+                    <input class="input_pass" id="input_pass" onchange="validatepass(event)"  name="input_pass" type="password">
                 </div>
             </div>
             <input  class="btn_submit" type="submit" value="ثبت نام">
             <p class="question">اکانت دارید؟ <a href="login.html"  class="pink a_register">ورود</a></p>
         </form>
        </section>
-       <script>
-        function validate(event){
-            console.log("changed");
-            if(event.target.value.length<3){
-            var x = document.getElementById("snackbar-vms")
-            x.innerHTML="خطا!!! نام شما باید حداقل 3 کاراکتر باشد.";
-            x.className = "show";
-            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-        }
-        }
-        function validatepass(event){
-           let password= event.target.value;
-            if (password.includes("@")!=true || password.includes("#")!=true || password.includes("&")){
-                var x = document.getElementById("snackbar-vms")
-                x.innerHTML="پسورد انتخابی شما حتما باید شامل  یکی از کاراکتر های @  و یا # و یا & باشد";
-                x.className = "show";
-                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-            }
-        }
-
-
-        //password button
-        const toggle=document.querySelector('.toggle');
-        const input=document.getElementById('input_pass');
-        toggle.addEventListener('click',function(){
-          if(input.type==="password"){
-                input.setAttribute('type','text');
-                toggle.classList.add('hide');
-         }else{
-              input.setAttribute('type','password');
-              toggle.classList.remove('hide');
-         }
-        })
-       </script>
+       <script src="./js/register.js"></script>
+       
 </body>
 </html>

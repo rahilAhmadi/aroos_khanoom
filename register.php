@@ -15,8 +15,7 @@ if(isset($_POST['input_name']) && !empty($_POST['input_name'])&&
 }
 else
 {
-    echo $name."++++".$username."++++".$password."else";
-    exit("پر کردن تمام فیلد ها اجباری است");
+    header('location:register.html');
 
 }
 mysqli_close($connect);
