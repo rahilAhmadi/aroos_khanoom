@@ -1,3 +1,4 @@
+// validation section
 function validate(event){
     if(event.target.value.length<3){
         var x = document.getElementById("snackbar-vms")
@@ -9,12 +10,16 @@ function validate(event){
 function validatepass(event){
     
     console.log("changed");
-   let password= event.target.value;
-   var x = document.getElementById("snackbar-vms")
+    let password= event.target.value;
+    var x = document.getElementById("snackbar-vms")
     if (password.length<8){
+        event.target.style.border='1px solid #af0423e4';
         x.innerHTML="پسورد انتخابی شما حداقل باید 8 کاراکتر باشد";
         x.className = "show";
         setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    else{
+        event.target.style.border='1px solid #038f31';
     }
 }
 
@@ -42,15 +47,14 @@ const passwordInput=document.querySelector('.input_pass');
 let timer;
 
 const form=document.querySelectorAll('.form_login input');
-console.log(form);
 
 for(let i=0;i<form.length;i++){
     form[i].addEventListener('input',function(){
-        if(form[i].value.length == 0){
-        form[i].style.border='1px solid #af0423e4'
+        if(form[i].value.length === 0){
+        form[i].style.border='1px solid #af0423e4';
     }
     else{
-        form[i].style.border='1px solid #038f31'
+        form[i].style.border='1px solid #038f31';
         }
     })
 }
