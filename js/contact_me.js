@@ -1,6 +1,6 @@
 const textarea=document.getElementById('textarea');
 const remaining=document.getElementById('textarea-remaining');
-let MAX_CHARS=500;
+let MAX_CHARS=200;
 
 textarea.addEventListener('input',function(){
     const totalRemaning=MAX_CHARS - textarea.value.length;
