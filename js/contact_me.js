@@ -14,3 +14,4 @@ textarea.addEventListener('input',function(){
         remaining.textContent=`مقدار مجاز تکمیل است ${totalRemaning}`
     }
 })
+

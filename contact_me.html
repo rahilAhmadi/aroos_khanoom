@@ -43,13 +43,23 @@
           <div class="contact-us-inputs">
               <input type="text" placeholder="نام و نام خانوادگی">
             <div class="contact-us-input-bottom">
-              <textarea  id="textarea" cols="30" rows="10" maxlength="500" placeholder="چیزی بنویسید..."></textarea>
+              <div class="textBox">
+                <textarea  id="textarea" cols="30" rows="10" maxlength="500" placeholder="چیزی بنویسید..."></textarea>
+              <div class="remaining">
+                  <div id="textarea-remaining">
+                      200 باقی مانده
+                  </div>
+              </div>
+              </div>
+              <div class="image_uploader">
+                <label for="inputTag">انتخاب عکس <br/>
+                  <i class="fa fa-2x fa-camera"></i>
+                  <input id="inputTag" type="file"/><br/>
+                  <img id="image-prev">
+                </label>
+              </div>
+          
               <input type="submit" class="button" value="ارسال">
-            </div>
-            <div class="remaining">
-                <div id="textarea-remaining">
-                    200 باقی مانده
-                </div>
             </div>
           </div>
         </form>

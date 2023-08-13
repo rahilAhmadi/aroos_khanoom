@@ -59,7 +59,7 @@ body{
     align-items: center;
   }
   .contact-us .contact-us-box .contact-us-input-bottom textarea{
-    width: 70%;
+    width: 100%;
     padding: 18px;
     border-radius: 10px;
     border: none;
@@ -82,7 +82,7 @@ body{
     font-size: 20px;
     width: 20%;
     padding: 10px 30px;
-    margin: auto;
+    margin: 20px 0;
     color: #fff;
     font-weight: 600;
     background-color: #F385AA;
@@ -95,11 +95,44 @@ body{
    border: 2px solid #F385AA;
    background-color: #fff;
   }
+  .textBox{
+    position: relative;
+    width: 70%;
+  }
   #textarea-remaining{
     position: absolute;
-    left: 133px;
-    bottom: 78px;
+    left: 15px;
+    bottom: 47px;
     color: #999;
+  }
+  .image_uploader{
+    text-align:center;
+    padding:3%;
+    border:thin solid #ccc;
+    width: 70%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 20px;
+}
+  
+  input[type="file"]{
+    display: none;
+  }
+
+  label{
+    cursor:pointer;
+  }
+  
+  #imageName{
+    color:green;
   }
   @media only screen and (max-width: 968px) {
     .contact-us{
