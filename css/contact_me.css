@@ -89,6 +89,7 @@ body{
     transition: 0.4s;
     outline: none;
     border: none;
+    padding-bottom: 40px;
   }
   .contact-us .contact-us-box .contact-us-input-bottom .button:hover{
    color: #F385AA;
@@ -108,8 +109,8 @@ body{
   .image_uploader{
     text-align:center;
     padding:3%;
-    border:thin solid #ccc;
-    width: 70%;
+    border:1px solid #ccc;
+    width:30%;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -122,7 +123,25 @@ body{
     -o-border-radius: 10px;
     margin-bottom: 20px;
 }
-  
+.inputLable{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-prev{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 5px;
+  object-fit: cover;
+  display: none;
+}
   input[type="file"]{
     display: none;
   }

@@ -15,3 +15,29 @@ textarea.addEventListener('input',function(){
     }
 })
 
+// input type file
+let input = document.getElementById("inputTag");
+let textInput=document.querySelector('.textInput');
+let imgPrev=document.querySelector('.image-prev');
+let iconPrev=document.querySelector('.icon_prev');
+console.log(textInput[0])
+input.addEventListener("change", ()=>{
+    let inputImage = document.querySelector("input[type=file]").files[0];
+    if(inputImage){
+        const reader=new FileReader();
+        console.log(reader,inputImage)
+        iconPrev.style.display='none';
+        imgPrev.style.display='block';
+        textInput.style.display='none'
+
+        reader.addEventListener('load',function(){
+            imgPrev.setAttribute('src',this.result)
+        })
+        reader.readAsDataURL(inputImage);
+    }else{
+        iconPrev.style.display=null;
+        imgPrev.style.display=null;
+        textInput.style.display=null;
+        imgPrev.setAttribute('src','');
+    }
+})
