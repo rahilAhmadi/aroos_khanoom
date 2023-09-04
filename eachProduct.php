@@ -35,7 +35,7 @@
         <div class="container_each">
             <div class="right">
                 <div class="big_each">
-                    <img src="asset/img/' . $IdArray[0] . '/' . $row['picA'] . '" alt="big_each">
+                    <img class="big_img" src="asset/img/' . $IdArray[0] . '/' . $row['picA'] . '" alt="big_each">
                 </div>
                 <div class="small_each">
                     <img class="small_img" onclick="showImage("asset/img/' . $IdArray[0] . '/' . $row['picA'] . '")" src="asset/img/' . $IdArray[0] . '/' . $row['picA'] . '"alt="small_each">

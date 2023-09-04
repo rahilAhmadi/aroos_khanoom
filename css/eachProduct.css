@@ -20,12 +20,28 @@ body{
     display: flex;
     flex-direction: column;
 }
-.small_each img{
+.small_each .small_img{
     height: 175px;
     width: 150px;
+    margin: 5px 0;
+    opacity: .5;
+    cursor: pointer;
+    transition:all .1s ease-in-out ;
+    -webkit-transition:all .1s ease-in-out ;
+    -moz-transition:all .1s ease-in-out ;
+    -ms-transition:all .1s ease-in-out ;
+    -o-transition:all .1s ease-in-out ;
+}
+.small_each .small_img.active{
+    opacity: 1;
+    border-radius: 2px solid #ccc;
+    -webkit-border-radius: 2px solid #ccc;
+    -moz-border-radius: 2px solid #ccc;
+    -ms-border-radius: 2px solid #ccc;
+    -o-border-radius: 2px solid #ccc;
 }
 .big_each img{
-    height: 550px;
+    height: 545px;
     width: 470px;
 }
 .left{
