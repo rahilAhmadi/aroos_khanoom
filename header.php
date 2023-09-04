@@ -22,7 +22,7 @@ if (isset($_SESSION['login'])&& $_SESSION['login']===true)
     echo '
             <div class="menuLeft">
                 <ul>
-                    <li><a href="shopping-card.php"><img src="asset/icon/card 1.png" alt="shoping-card"></a></li>
+                    <li class="addToCard"><a href="shopping-card.php"><img src="asset/icon/card 1.png" alt="shoping-card"></a></li>
                     <li class="action">
                     <div class="profile" onclick="toggleMenu()">  
                     <a class="buttonLogin action_button btn_menu_a"> <img src="asset/icon/user_head.png" class="user_icon" alt="shoping-card">'.$_SESSION['name'].' <img src="asset/icon/down-arrow.png" class="arrow_bottom" alt="shoping-card"></a></div>

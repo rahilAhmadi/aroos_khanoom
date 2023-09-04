@@ -4,6 +4,68 @@ body{
 .header{
     height: auto;
 }
+.addToCard{
+    position: relative;
+    top: 6px;
+    left: 0%;
+    cursor: pointer;
+    width: 3%;
+}
+.addToCard::before{
+    content: attr(data-count);
+    position: absolute;
+    top: -12px;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    background-color: #c00;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.addToCard.zero::before{
+    opacity: 1;
+}
+.addToCard .alert::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #cc00009d;
+    left: -10px;
+    top: 12px;
+
+}
+.addToCard .alert{
+    position: absolute;
+    width: 300px;
+    font-size: 17px;
+    color: #fff;
+    background: #cc00009d;
+    padding: 10px;
+    text-align: center;
+    top: -10px;
+    left: 70px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    opacity: 1;
+}
 .container_each{
     display: flex;
 }
@@ -86,6 +148,7 @@ body{
     font-weight: bolder;
     text-align: center;
     transition: .4s;
+    cursor: pointer;
 }
 .btn_submit:hover{
     background-color: #fff;

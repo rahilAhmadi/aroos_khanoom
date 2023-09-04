@@ -14,13 +14,7 @@
  <?php
  require ('header.php');
 
- if(isset($_SESSION['username'])and isset($_SESSION['login']) and $_SESSION['login']===true)
-     {
-         $url='shopping.php';}
-
- else
- {
-
+ if(!(isset($_SESSION['username'])and isset($_SESSION['login']) and $_SESSION['login']===true)){
      $url='login.html';}
 
 
@@ -38,7 +32,7 @@
                     <img class="big_img" src="asset/img/' . $IdArray[0] . '/' . $row['picA'] . '" alt="big_each">
                 </div>
                 <div class="small_each">
-                    <img class="small_img" onclick="showImage("asset/img/' . $IdArray[0] . '/' . $row['picA'] . '")" src="asset/img/' . $IdArray[0] . '/' . $row['picA'] . '"alt="small_each">
+                    <img class="small_img active" onclick="showImage("asset/img/' . $IdArray[0] . '/' . $row['picA'] . '")" src="asset/img/' . $IdArray[0] . '/' . $row['picA'] . '"alt="small_each">
                     <img class="small_img" onclick="showImage("asset/img/' . $IdArray[0] . '/' . $row['picB'] . '" alt="small_each")" src="asset/img/' . $IdArray[0] . '/' . $row['picB'] . '" alt="small_each">
                     <img class="small_img" onclick="showImage("asset/img/' . $IdArray[0] . '/' . $row['picC'] . '" alt="small_each")" src="asset/img/' . $IdArray[0] . '/' . $row['picC'] . '" alt="small_each">
                 </div>
