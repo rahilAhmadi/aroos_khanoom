@@ -14,6 +14,9 @@
  <?php
  require ('header.php');
 
+ if(isset($_SESSION['username'])and isset($_SESSION['login']) and $_SESSION['login']===true){
+         $url='shopping.php';}
+ else
  if(!(isset($_SESSION['username'])and isset($_SESSION['login']) and $_SESSION['login']===true)){
      $url='login.html';}
 
