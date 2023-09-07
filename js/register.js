@@ -10,44 +10,55 @@ toggle.addEventListener('click',function(){
       toggle.classList.remove('hide');
  }
 })
+
+
+///form validation
 const form=document.getElementById('form');
 const nameinput=document.getElementById('name_user_rigister');
 const username=document.getElementById('input_user');
 const password=document.getElementById('input_pass');
 
 nameinput.addEventListener('blur',function(){
-    checkInput();
+    checkInput('user');
 })
 username.addEventListener('blur',function(){
-    checkInput();
+    checkInput('name');
 })
 password.addEventListener('blur',function(){
-    checkInput();
+    checkInput('pass');
 })
 
 
-function checkInput(){
+function checkInput(key){
     const usernameVaule= username.value.trim();
     const nameValue= nameinput.value.trim();
     const passwrodVaule= password.value.trim();
+
+  if(key=='name'){
     if(usernameVaule===''){
         setError(username,'این فیلد نمیتواند خالی باشد نام کاربری انتخاب کنید');
     }else{
         setsuccess(username);
     }
+  }
+
+
+  if(key=='user'){
 
     if(nameValue===''){
         setError(nameinput,'مقدار نام نمیتواند خالی باشد نامی را انتخاب کنید.')
     }else{
         setsuccess(nameinput);
     }
+}
 
-
+   if(key=='pass'){
     if(passwrodVaule===''){
-        setError(password,'مقدار پسورد خالی است پسوردی وارد کنید')
-    }else{
-        setsuccess(password)
-    }
+      setError(password,'مقدار پسورد خالی است پسوردی وارد کنید')
+  }else{
+      setsuccess(password)
+  }
+   }
 }
 
 function setError(input, massege){
