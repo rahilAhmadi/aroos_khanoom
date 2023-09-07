@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -9,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ثبت نام</title>
 </head>
+
 <body>
     <section class="login_form_section">
         <div class="alert-box hidden">
@@ -17,33 +19,51 @@
         </div>
         <a class="back" href="index.html">
             <img class="icon_login_back" src="asset/icon/right-arrow.png">
-        <p>بازگشت</p>
+            <p>بازگشت</p>
         </a>
         <div id="snackbar-vms"></div>
-        <form class="form_login" action="register.php" method="post" autocomplete="off">
-            <div class="name">
-                <label class="lbl_name">نام:</label>
-                <input class="input_name" name="input_name" id="name_user_rigister" onchange="validate(event)" type="text">
+        <form class="form_login" action="register.php" method="post" id="form" autocomplete="off">
+            <div class="form-control name">
+                <label class="lbl_name"> نام:</label>
+                <input type="text" placeholder="مثلا : راحیل" class="input_name" id="name_user_rigister"
+                    name="input_name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>پیام خطا</span>
+
             </div>
-            <div class="user">
-                <label class="lbl_user">نام کاربری:</label>
-                <input class="input_user" name="input_user" type="text">
+            <div class="form-control user">
+                <label class="lbl_user">نام کاربری :</label>
+                <input type="text" placeholder="مثلا : rahil_ahmadi2023" class="input_user" id="input_user" name="input_user">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>پیام خطا</span>
             </div>
-            <div class="pass">
+            <div class="form-control pass">
                 <label class="lbl_pass">رمز عبور:</label>
-                <div class="password_box">
-                    <div class="toggle">
-                        <i class="far fa-eye"></i>
-                        <i id="slash-eye" class="far fa-eye-slash"></i>
-                    </div>
-                    <input class="input_pass" id="input_pass" onchange="validatepass(event)"  name="input_pass" type="password">
+                <div class="toggle">
+                    <i class="far fa-eye"></i>
+                    <i id="slash-eye" class="far fa-eye-slash"></i>
+                </div>
+                <input type="password" placeholder="پسورد" class="input_pass" id="input_pass"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="input_pass">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>پیام خطا</span>
+                
+                <div id="message">
+                    <h5>رمز عبور شما باید حتما شامل موارد زیر باشد:</h5>
+                    <p id="letter" class="invalid">یک حرف<b> کوچک</b></p>
+                    <p id="capital" class="invalid">یک حرف<b> بزرگ</b></p>
+                    <p id="number" class="invalid">یک <b>عدد</b></p>
+                    <p id="length" class="invalid">حداقل <b>8 کاراکتر</b></p>
                 </div>
             </div>
-            <input  class="btn_submit" type="submit" value="ثبت نام">
-            <p class="question">اکانت دارید؟ <a href="login.html"  class="pink a_register">ورود</a></p>
+            <input class="btn_submit" type="submit" value="ثبت نام">
+            <p class="question">اکانت دارید؟ <a href="login.html" class="pink a_register">ورود</a></p>
         </form>
-       </section>
-       <script src="./js/register.js"></script>
-       
+    </section>
+    <script src="./js/register.js"></script>
+
 </body>
+
 </html>

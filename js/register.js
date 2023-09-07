@@ -1,30 +1,4 @@
-// validation section
-function validate(event){
-    if(event.target.value.length<3){
-        var x = document.getElementById("snackbar-vms")
-        x.innerHTML="خطا!!! نام شما باید حداقل 3 کاراکتر باشد.";
-        x.className = "show";
-        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-    }
-}
-function validatepass(event){
-    
-    console.log("changed");
-    let password= event.target.value;
-    var x = document.getElementById("snackbar-vms")
-    if (password.length<8){
-        event.target.style.border='1px solid #af0423e4';
-        x.innerHTML="پسورد انتخابی شما حداقل باید 8 کاراکتر باشد";
-        x.className = "show";
-        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-    }
-    else{
-        event.target.style.border='1px solid #038f31';
-    }
-}
-
-
-//password button
+// //password button
 const toggle=document.querySelector('.toggle');
 const input=document.getElementById('input_pass');
 toggle.addEventListener('click',function(){
@@ -36,56 +10,113 @@ toggle.addEventListener('click',function(){
       toggle.classList.remove('hide');
  }
 })
+const form=document.getElementById('form');
+const nameinput=document.getElementById('name_user_rigister');
+const username=document.getElementById('input_user');
+const password=document.getElementById('input_pass');
 
-// modal section
-const btn=document.querySelector('.btn_submit');
-const alertBox=document.querySelector('.alert-box');
-const closebtn=document.querySelector('.close-btn');
-const nameInput=document.querySelector('.input_name');
-const usernameInput=document.querySelector('.input_username');
-const passwordInput=document.querySelector('.input_pass');
-let timer;
-
-const form=document.querySelectorAll('.form_login input');
-
-for(let i=0;i<form.length;i++){
-    form[i].addEventListener('input',function(){
-        if(form[i].value.length === 0){
-        form[i].style.border='1px solid #af0423e4';
-    }
-    else{
-        form[i].style.border='1px solid #038f31';
-        }
-    })
-}
-
-btn.addEventListener('click',function(e){
-    if(nameInput.value.length==0 || passwordInput.value.length==0||usernameInput.value.length==0){
-        e.preventDefault();
-        // closebtn.getElementsByTagName('p').innerHTML="برای ثبت نام باید همه فیلد ها پر باشند."
-        showAlertBox();
-
-    }
+nameinput.addEventListener('blur',function(){
+    checkInput();
 })
-
-closebtn.addEventListener('click',function(){
-    hideAlertBox();
-    clearTimeout(timer);
+username.addEventListener('blur',function(){
+    checkInput();
+})
+password.addEventListener('blur',function(){
+    checkInput();
 })
 
 
-function showAlertBox(){    
-    alertBox.classList.remove('hide');
-    alertBox.classList.add('show');
-    if(alertBox.classList.contains('hidden')){
-        alertBox.classList.remove('hidden');
+function checkInput(){
+    const usernameVaule= username.value.trim();
+    const nameValue= nameinput.value.trim();
+    const passwrodVaule= password.value.trim();
+    if(usernameVaule===''){
+        setError(username,'این فیلد نمیتواند خالی باشد نام کاربری انتخاب کنید');
+    }else{
+        setsuccess(username);
     }
-    timer=setTimeout(() => {
-        hideAlertBox();
-    }, 5000);
+
+    if(nameValue===''){
+        setError(nameinput,'مقدار نام نمیتواند خالی باشد نامی را انتخاب کنید.')
+    }else{
+        setsuccess(nameinput);
+    }
+
+
+    if(passwrodVaule===''){
+        setError(password,'مقدار پسورد خالی است پسوردی وارد کنید')
+    }else{
+        setsuccess(password)
+    }
 }
 
-function hideAlertBox(){
-    alertBox.classList.remove('show');
-    alertBox.classList.add('hide');
+function setError(input, massege){
+    const formControl = input.parentElement;
+    console.log(formControl)
+    const span= formControl.querySelector('span');
+
+    span.innerHTML=massege;
+    formControl.className='form-control error';
+}
+
+function setsuccess(input){
+    const formControl=input.parentElement;
+    formControl.className='form-control success'
+}
+
+
+//password validation
+var myInput = document.getElementById("input_pass");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
 }
