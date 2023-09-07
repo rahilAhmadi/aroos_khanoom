@@ -15,7 +15,7 @@ body{
     justify-content: space-around;
     box-shadow: 5px 5px 50px 5px #a8a8a858;
     width:350px;
-    height: 450px;
+    height: auto;
     border-radius: 25px;
     padding: 30px;
 }
@@ -35,7 +35,7 @@ body{
     border-radius: 5px;
     outline: none;
     border: 1px solid #a8a8a8;
-    margin-top: 10px;
+    margin-top: 3px;
     background-color: #dedede58;
     transition: 0.4s;
     padding: 5px;
@@ -44,10 +44,15 @@ body{
     padding-left: 40px;
 }
 .input_user:hover, .input_pass:hover ,.input_name:hover{
-    background-color: #a7a7a758;
+    background-color: #cacaca58;
+}
+.form-control.success .toggle, 
+.form-control.error .toggle{
+left: 20px;
+margin-top: 15px;
 }
 .toggle{
-    margin-top: 15px;
+    margin-top: 48px;
     width: 30px;
     position: absolute;
     left: 0px;
@@ -78,12 +83,15 @@ body{
     display: block;
   }
 .btn_submit{
-    margin:20px 60px;
-    height: 45px;
+    margin: 20px auto;
     cursor: pointer;
     border-radius: 50px;
     border: 1px solid #4BA7B9;
     background-color: #4ba7b94c;
+    padding: 12px 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .question{
     padding-right: 70px;
@@ -210,4 +218,102 @@ body{
 }
 .hidden{
     visibility: hidden;
+  }
+
+
+
+
+
+.form-control.error input{
+    border-color: #f14545;
+}
+.form-control.error span{
+    visibility: visible;
+}
+.form-control.error .fa-exclamation-triangle{
+    visibility: visible;
+}
+
+.form-control.success input{
+    border-color: #42b856;
+}
+.form-control.success .fa-check-circle{
+    visibility: visible;
+}
+form .form-control{
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+.form-control label{
+    display: block;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.form-control input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 2px solid #d8d8d8;
+    display: block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.form-control input::placeholder{
+    color: #b9b9b9;
+}
+.form-control .fas{
+    position: absolute;
+    left: 10px;
+    top: 46%;
+    visibility: hidden;
+}
+.form-control .fa-check-circle{
+    color: #43cc5a;
+}
+.form-control .fa-exclamation-triangle{
+    color: #c00;
+}
+.form-control span{
+    font-size: 13px;
+    color: #c00;
+    visibility: hidden;
+}
+
+
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 5px 35px;
+    font-size: 15px;
+  }
+  
+  .valid {
+    color: #32ac32;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: 15px;
+    content: "✔";
+  }
+  
+  .invalid {
+    color:#c00;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: 15px;
+    content: "✖";
   }
