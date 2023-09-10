@@ -1,6 +1,19 @@
 // //password button
 const toggle=document.querySelector('.toggle');
 const input=document.getElementById('input_pass');
+var myInput = document.getElementById("input_pass");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+const form=document.getElementById('form');
+const nameinput=document.getElementById('name_user_rigister');
+const username=document.getElementById('input_user');
+const password=document.getElementById('input_pass');
+
+
+
+
 toggle.addEventListener('click',function(){
   if(input.type==="password"){
         input.setAttribute('type','text');
@@ -13,11 +26,6 @@ toggle.addEventListener('click',function(){
 
 
 ///form validation
-const form=document.getElementById('form');
-const nameinput=document.getElementById('name_user_rigister');
-const username=document.getElementById('input_user');
-const password=document.getElementById('input_pass');
-
 nameinput.addEventListener('blur',function(){
     checkInput('user');
 })
@@ -55,12 +63,13 @@ function checkInput(key){
    if(key=='pass'){
     if(passwrodVaule===''){
       setError(password,'مقدار پسورد خالی است پسوردی وارد کنید')
-  }else{
-      setsuccess(password)
-  }
+    }else if(letter.classList.contains('invalid')||capital.classList.contains('invalid')||number.classList.contains('invalid')|| length.classList.contains('invalid')){
+    setError(password,'لطفا همه موارد را رعایت بفرمایید.')
+    }else{
+    setsuccess(password)
    }
 }
-
+}
 function setError(input, massege){
     const formControl = input.parentElement;
     console.log(formControl)
@@ -77,11 +86,7 @@ function setsuccess(input){
 
 
 //password validation
-var myInput = document.getElementById("input_pass");
-var letter = document.getElementById("letter");
-var capital = document.getElementById("capital");
-var number = document.getElementById("number");
-var length = document.getElementById("length");
+
 
 myInput.onfocus = function() {
   document.getElementById("message").style.display = "block";

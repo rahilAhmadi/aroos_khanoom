@@ -219,13 +219,13 @@ margin-top: 15px;
 .hidden{
     visibility: hidden;
   }
-
-
-
-
-
 .form-control.error input{
     border-color: #f14545;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 .form-control.error span{
     visibility: visible;
@@ -236,6 +236,7 @@ margin-top: 15px;
 
 .form-control.success input{
     border-color: #42b856;
+    transition: all .3s ease-in-out;
 }
 .form-control.success .fa-check-circle{
     visibility: visible;
@@ -273,14 +274,29 @@ form .form-control{
 }
 .form-control .fa-check-circle{
     color: #43cc5a;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 .form-control .fa-exclamation-triangle{
     color: #c00;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 .form-control span{
     font-size: 13px;
     color: #c00;
     visibility: hidden;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 
 
@@ -291,7 +307,12 @@ form .form-control{
     position: relative;
     padding: 20px;
     margin-top: 10px;
-  }
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
   
   #message p {
     padding: 5px 35px;
@@ -301,7 +322,6 @@ form .form-control{
   .valid {
     color: #32ac32;
   }
-  
   .valid:before {
     position: relative;
     left: 15px;
