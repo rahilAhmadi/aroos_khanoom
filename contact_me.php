@@ -21,19 +21,28 @@
           </div>
           <form action="">
           <div class="contact-us-inputs">
-            <div class="contact-us-inputs-top">
               <input type="text" placeholder="نام و نام خانوادگی">
-              <input type="email" placeholder="ایمیل">
-              <input type="text" placeholder="موضوع">
-            </div>
             <div class="contact-us-input-bottom">
-              <textarea  id="textarea" cols="30" rows="10" maxlength="500" placeholder="چیزی بنویسید..."></textarea>
+              <div class="textBox">
+                <textarea  id="textarea" cols="30" rows="10" maxlength="200" placeholder="چیزی بنویسید..."></textarea>
+              <div class="remaining">
+                  <div id="textarea-remaining">
+                      200 باقی مانده
+                  </div>
+              </div>
+              </div>
+              <div class="image_uploader">
+                <label class="inputLable" for="inputTag">
+                    <div>
+                        <span class="textInput">انتخاب عکس</span><br/>
+                        <i class="fa fa-2x fa-camera icon_prev"></i>
+                    </div>
+                  <input id="inputTag" type="file"/><br/>
+                  <img class="image-prev" src="">
+                </label>
+              </div>
+          
               <input type="submit" class="button" value="ارسال">
-            </div>
-            <div class="remaining">
-                <div id="textarea-remaining">
-                    500 باقی مانده
-                </div>
             </div>
           </div>
         </form>
