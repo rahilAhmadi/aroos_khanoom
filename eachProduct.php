@@ -31,9 +31,10 @@
      <section class="eachProduct">
         <div class="container_each">
             <div class="right">
-                <div class="big_each">
-                    <img class="big_img" src="asset/img/' . $IdArray[0] . '/' . $row['picA'] . '" alt="big_each">
-                </div>
+            <div class="img-zoom-container">
+            <img id="myimage" class="big_img" src="asset/img/' . $IdArray[0] . '/' . $row['picA'] . '" alt="big_each">
+            <div id="myresult" class="img-zoom-result"></div>
+          </div>
                 <div class="small_each">
                     <img class="small_img active" onclick="showImage("asset/img/' . $IdArray[0] . '/' . $row['picA'] . '")" src="asset/img/' . $IdArray[0] . '/' . $row['picA'] . '"alt="small_each">
                     <img class="small_img" onclick="showImage("asset/img/' . $IdArray[0] . '/' . $row['picB'] . '" alt="small_each")" src="asset/img/' . $IdArray[0] . '/' . $row['picB'] . '" alt="small_each">

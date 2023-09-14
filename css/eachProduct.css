@@ -1,17 +1,20 @@
-body{
+body {
     direction: rtl;
 }
-.header{
+
+.header {
     height: auto;
 }
-.addToCard{
+
+.addToCard {
     position: relative;
     top: 6px;
     left: 0%;
     cursor: pointer;
     width: 3%;
 }
-.addToCard::before{
+
+.addToCard::before {
     content: attr(data-count);
     position: absolute;
     top: -12px;
@@ -34,10 +37,12 @@ body{
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
-.addToCard.zero::before{
+
+.addToCard.zero::before {
     opacity: 1;
 }
-.addToCard .alert::before{
+
+.addToCard .alert::before {
     content: '';
     position: absolute;
     width: 0;
@@ -49,7 +54,8 @@ body{
     top: 12px;
 
 }
-.addToCard .alert{
+
+.addToCard .alert {
     position: absolute;
     width: 300px;
     font-size: 17px;
@@ -66,35 +72,41 @@ body{
     -o-transition: all .2s ease-in-out;
     opacity: 1;
 }
-.container_each{
+
+.container_each {
     display: flex;
 }
-.right{
+
+.right {
     width: 50%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
 }
-.right img{
+
+.right img {
     margin: 5px;
 }
-.small_each{
+
+.small_each {
     display: flex;
     flex-direction: column;
 }
-.small_each .small_img{
+
+.small_each .small_img {
     height: 175px;
     width: 150px;
     margin: 5px 0;
     opacity: .5;
     cursor: pointer;
-    transition:all .1s ease-in-out ;
-    -webkit-transition:all .1s ease-in-out ;
-    -moz-transition:all .1s ease-in-out ;
-    -ms-transition:all .1s ease-in-out ;
-    -o-transition:all .1s ease-in-out ;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
 }
-.small_each .small_img.active{
+
+.small_each .small_img.active {
     opacity: 1;
     border-radius: 2px solid #ccc;
     -webkit-border-radius: 2px solid #ccc;
@@ -102,11 +114,42 @@ body{
     -ms-border-radius: 2px solid #ccc;
     -o-border-radius: 2px solid #ccc;
 }
-.big_each img{
-    height: 545px;
-    width: 470px;
+
+.big_each {
+    position: relative;
 }
-.left{
+
+.img-zoom-container {
+
+    position: relative;
+}
+
+.img-zoom-lens {
+    width: 95px;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    cursor: pointer;
+    border: 1px solid #d4d4d492;
+    visibility: hidden;
+}
+
+#myimage {
+    width: 500px;
+    height: 550px;
+}
+
+.img-zoom-result {
+    border: 1px solid #d4d4d4;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15%;
+    right: 520px;
+    visibility: hidden;
+}
+
+.left {
     width: 43%;
     display: flex;
     flex-direction: column;
@@ -115,32 +158,40 @@ body{
     justify-content: center;
     /* align-items: center; */
 }
-.left h1{
+
+.left h1 {
     text-align: center;
 }
-.item_each{
+
+.item_each {
     display: flex;
     justify-content: space-around;
 }
-.color,.size{
+
+.color,
+.size {
     border: 1px solid #9A9A9A;
     margin: 30px 0;
     padding: 25px;
 }
-.item_check{
+
+.item_check {
     display: flex;
     align-items: center;
 }
-.price{
+
+.price {
     display: flex;
     margin: 30px 0;
 }
-.price_number{
+
+.price_number {
     margin: 0 10px;
 }
-.btn_submit{
+
+.btn_submit {
     margin: 20px 0;
-    padding:15px;
+    padding: 15px;
     background-color: #33E570;
     border: none;
     outline: none;
@@ -150,45 +201,55 @@ body{
     transition: .4s;
     cursor: pointer;
 }
-.btn_submit:hover{
+
+.btn_submit:hover {
     background-color: #fff;
     color: #33E570;
     border: 2px solid #33E570;
 }
+
 input[type=radio] {
     border: 1px solid #9A9A9A;
     background-color: #D9D9D9;
     padding: 0.5em;
     margin: 0 10px;
     -webkit-appearance: none;
-  }
-  
-  input[type=radio]:checked {
-    background: url(../asset/img/check-mark.png) no-repeat center center,#D9D9D9;
+}
+
+input[type=radio]:checked {
+    background: url(../asset/img/check-mark.png) no-repeat center center, #D9D9D9;
     background-size: 30px 28px;
-  }
-  
-  input[type=radio]:focus {
+}
+
+input[type=radio]:focus {
     outline-color: transparent;
-  }  
-  .radio{
+}
+
+.radio {
     display: flex;
     list-style: none;
-  }
+}
+
 @media only screen and (max-width: 968px) {
-    .container_each{
+    .container_each {
         display: flex;
         flex-direction: column;
     }
-    .right,.left{
+
+    .right,
+    .left {
         width: 100%;
         display: flex;
         align-items: center;
     }
-    .left{
+
+    .left {
         margin-top: 30px;
     }
-    .size,.color,.btn_submit{
+
+    .size,
+    .color,
+    .btn_submit {
         width: 90%;
     }
 }
