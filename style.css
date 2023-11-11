@@ -81,6 +81,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    z-index: 999;
 }
 
 .menu .menuRight li {
@@ -272,7 +273,6 @@ li.action {
     flex-direction: column;
     width: 30%;
     margin-right: 100px;
-    z-index: 999;
 }
 
 .content .contentDesc h1 {
@@ -295,6 +295,7 @@ li.action {
     transition: 0.4s;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 span.span_click_btn{
     background-color: #fff;
@@ -667,5 +668,18 @@ span.span_click_btn{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 280px);
         grid-template-areas: "item_1 item_1" "item_2 item_2" "item_3 item_3" "item_4 item_4" "item_5 item_5";
+    }
+    .comments{
+        flex-wrap: wrap;
+        padding: 0px 15px;
+    }
+    .comment {
+        display: flex;
+        width: 100% !important;
+        margin: 100px 0px;
+        grid-gap: 20px;
+        padding: 0 15px;
+        position: relative;
+        flex-wrap: wrap;
     }
 }

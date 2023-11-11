@@ -157,10 +157,10 @@ body{
 }
 .comments{
     display: flex;
-    width: 100%;
+    width: 85%;
     margin: 100px 0px;
     grid-gap: 20px;
-    padding: 0 150px;
+    margin: 100px auto;
     position: relative;
 }
 .prev_comment{
@@ -172,7 +172,7 @@ body{
     width: 40px;
     height: 40px;
     top: 40%;
-    left: 80px;
+    left: 40px;
     cursor: pointer;
 }
 .next_comment{
@@ -194,7 +194,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 10px;
+    margin: 40px 10px;
     width: 33%;
     background-color: #f7f7f7;
     padding: 40px 20px;
@@ -213,7 +213,6 @@ body{
     text-align: justify;
     line-height: 30px;
     font-size: 16px;
-    height: 250px;
 }
 .comments .comment p i{
     color: #F385AA;
@@ -250,10 +249,11 @@ body{
 }
 .comment_name h3{
     color: #F012BE;
+    font-size: 16px;
 }
 .comment_name span{
     color: #777;
-    font-size: 14px;
+    font-size: 13px;
 }
 /* --------------best Seller-------------- */
 .container_bestSeller{
