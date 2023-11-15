@@ -12,6 +12,7 @@ body{
     padding: 20px 0;
     position: sticky;
     top: 20px;
+    display: none;
 }
 .item_filter{
     display: flex;
@@ -69,14 +70,20 @@ section.show_more_content{
     display: flex;
 }
 .content-div{
-    width: 1300px;
+    width: 100%;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
 
 }
+.contentWeddingDress {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .card{
-    width: 33.33%;
+    width: 22.33%;
     padding: 0 40px;
     overflow: hidden;
     border: 1px solid #d3d3d3a3;
