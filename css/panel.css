@@ -34,7 +34,7 @@ aside .logo-dashboard img {
     height: 120px;
 }
 
-aside ul li {
+aside ul .li-menu-dashboard {
     list-style: none;
     width: 100%;
     border-radius: 10px;
@@ -50,7 +50,7 @@ aside ul li {
     -o-transition: all .3s ease-in-out;
 }
 
-aside ul li a {
+aside ul .li-menu-dashboard a {
     text-decoration: none;
     color: #BAC1C8;
     margin: 10px 10px;
@@ -76,7 +76,17 @@ aside ul li a {
 .menu_dashboard li:hover {
     background-color: #f5f5f5;
 }
-
+.sub-product-dashboard{
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-start;
+    margin-right: 50px;
+}
+.sub-product-dashboard li {
+    font-size: 15px;
+    color: #BAC1C8;
+}
 .active-dashboard {
     background-color: #E7E7FF;
 }
@@ -364,6 +374,9 @@ aside ul li a {
     top: 0px;
     right: 250;
     cursor: pointer;
+}
+.btnSearch i{
+    color: #696CFF;
 }
 
 .search.active input {
