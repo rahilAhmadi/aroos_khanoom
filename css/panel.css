@@ -521,10 +521,170 @@ main.prodcut_main , main.comment_main , main.order_main{
 .img_text_comment_item{
     width: 15%;
 }
+.img_text_comment_item img{
+    object-fit: cover;
+}
 .buttons_comment_item{
     width: 15%;
 }
 .buttons_comment_item .disable_comment_item{
     padding: 30px 0 !important;
     background-color: #FF3E1D;
+}
+
+/* add product */
+ .formAddProduct{
+    width: 70vw;
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+}
+ .add-product-inputs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+ .add-product-inputs .inputdiv{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
+ }
+.add-product-inputs input{
+    width:70%;
+    height:40px;
+    margin:30px  5px;
+    padding: 18px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #fdfbfb;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #f2f2f2;
+}
+.add-product-input-bottom{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+form .button {
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 30px;
+    margin: 20px 0;
+    color: #fff;
+    font-weight: 600;
+    background-color: #F385AA;
+    transition: 0.4s;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    /* padding-bottom: 40px; */
+    margin: auto;
+    margin-top: 20px;
+}
+form .button:hover{
+   color: #F385AA;
+   border: 2px solid #F385AA;
+   background-color: #fff;
+  }
+  .textBox{
+    position: relative;
+    width: 70%;
+  }
+  #textarea-remaining{
+    position: absolute;
+    left: 15px;
+    bottom: 47px;
+    color: #999;
+  }
+  .image_uploader{
+    text-align:center;
+    padding:3%;
+    border:1px solid #ccc;
+    width:30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 20px 30px;
+}
+.inputLable{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-prev{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 5px;
+  object-fit: cover;
+  display: block;
+}
+.textInput{
+    display: none;
+}
+i.fa.fa-2x.fa-camera.icon_prev{
+    display: none;
+}
+  input[type="file"]{
+    display: none;
+  }
+
+  label{
+    cursor:pointer;
+  }
+  
+  #imageName{
+    color:green;
+  }
+  @media only screen and (max-width: 968px) {   
+    .add-product-title h1{
+        font-size: 25px;
+    }
+     .add-product-inputs-top input{
+        font-size: 14px;
+    }
+     .add-product-input-bottom .button{
+        width: 50%;
+    }
 }

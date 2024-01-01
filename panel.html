@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -9,18 +10,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>panel</title>
 </head>
+
 <body>
     <section class="dashboard">
         <aside>
             <ul class="menu_dashboard">
                 <li class="logo-dashboard li-menu-dashboard"><a href="#">
-                    <img src="./asset/logo/logo-no-background.png" alt="">
-                </a></li>
-                <li data-name="dashboard" class="active-dashboard li-menu-dashboard"><a href="#">داشبورد<i class="fas fa-home"></i></a></li>
-                <li data-name="product" class="li-menu-dashboard"><a href="#">مدیریت محصولات<i class="fa-solid fa-bag-shopping"></i></a></li>
-                <li data-name="comment" class="li-menu-dashboard"><a href="#">مدیریت نظرات<i class="fa-solid fa-comments"></i></a></li>
-                <li data-name="order" class="li-menu-dashboard"><a href="#">مدیریت سفارشات<i class="fa-brands fa-shopify"></i></a></li>
-                <li data-name="user" class="li-menu-dashboard"><a href="#">مدیریت کاربران<i class="fa-solid fa-user"></i></a></li>
+                        <img src="./asset/logo/logo-no-background.png" alt="">
+                    </a></li>
+                <li data-name="dashboard" class="active-dashboard li-menu-dashboard"><a href="#">داشبورد<i
+                            class="fas fa-home"></i></a></li>
+                <li data-name="product" class="li-menu-dashboard"><a href="#">مدیریت محصولات<i
+                            class="fa-solid fa-bag-shopping"></i></a></li>
+                <li data-name="comment" class="li-menu-dashboard"><a href="#">مدیریت نظرات<i
+                            class="fa-solid fa-comments"></i></a></li>
+                <li data-name="order" class="li-menu-dashboard"><a href="#">مدیریت سفارشات<i
+                            class="fa-brands fa-shopify"></i></a></li>
+                <li data-name="addProduct" class="li-menu-dashboard"><a href="#">مدیریت کاربران<i
+                            class="fa-solid fa-user"></i></a></li>
                 <li class="li-menu-dashboard"><a href="#">ورود به سایت<i class="fa-solid fa-globe"></i></a></li>
             </ul>
         </aside>
@@ -32,7 +39,8 @@
                     </div>
                     <div class="menu-profile-dashboard">
                         <h3>محمدرضا احمدپور
-                            <br> <span>طراح و برنامه نویس وب</span></h3>
+                            <br> <span>طراح و برنامه نویس وب</span>
+                        </h3>
                         <ul>
                             <li><img src="asset/icon/user-profile.png" alt=""><a href="#">پروفایل من</a></li>
                             <li><img src="asset/icon/edit.png" alt=""><a href="#">تغییر اطلاعات</a></li>
@@ -52,11 +60,11 @@
             </div>
             <div class="box-dashboard">
                 <div class="item-box-dashboard">
-                        <div class="icon_box_dashboard order_dash"><i class="fa-solid fa-cart-shopping"></i></div>
-                        <div class="text_box_dashboard">
-                            <h3>تعداد سفارش</h3>
-                            <p><span> 18 </span>سفارش جدید</p>
-                        </div>
+                    <div class="icon_box_dashboard order_dash"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="text_box_dashboard">
+                        <h3>تعداد سفارش</h3>
+                        <p><span> 18 </span>سفارش جدید</p>
+                    </div>
                 </div>
                 <div class="item-box-dashboard">
                     <div class="icon_box_dashboard sale_dash"><i class="fa-regular fa-credit-card"></i></div>
@@ -64,7 +72,7 @@
                         <h3>تعداد فروش</h3>
                         <p>
                             <span>12</span>
-                              فروش
+                            فروش
                         </p>
                     </div>
                 </div>
@@ -75,7 +83,7 @@
                         <p><span>255 </span>کاربر</p>
                     </div>
                 </div>
-               
+
             </div>
             <div class="chart-dashboard">
                 <canvas id="myChart" width="300" height="150"></canvas>
@@ -92,872 +100,999 @@
             </ul>
             <div class="subdivs" data-id="product-bride-dress-submenu">
                 <div class="prodcut_items_box">
-                  <div class="img_text_product_item">
-                    <img src="./asset/img/dress/1df5g4g321g6841gdf8g451gd8r4gC.jpg" alt="">
-                    <div class="text_prodcut_item_box">
-                    <h3>لباس عروس پفی گل گلی</h3>
-                    <div class="price_prodcut_box">
-                        <h4> قیمت: </h4>
-                        <h5>2300000 تومان</h5>
+                    <div class="img_text_product_item">
+                        <img src="./asset/img/dress/1df5g4g321g6841gdf8g451gd8r4gC.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>لباس عروس پفی گل گلی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>2300000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>44 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="count_prodcut_box">
-                        <h4> تعداد: </h4>
-                        <h5>44 عدد</h5>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
                     </div>
-                </div>
-                  </div>
-                   <div class="buttons_product_item">
-                   <div class="edite_delete_buttons_product_item">
-                    <a class="edit_product_item" href="#">ویرایش</a>
-                    <a class="delete_product_item" href="#">حذف محصول</a>
-                   </div>
-                    <a class="disable_product_item" href="#">غیر فعال</a>
-                   </div>
                 </div>
                 <div class="prodcut_items_box">
-                  <div class="img_text_product_item">
-                    <img src="./asset/img/dress/1df5g4g321g6841gdf8g451gd8r4gC.jpg" alt="">
-                    <div class="text_prodcut_item_box">
-                    <h3>لباس عروس پفی گل گلی</h3>
-                    <div class="price_prodcut_box">
-                        <h4> قیمت: </h4>
-                        <h5>2300000 تومان</h5>
+                    <div class="img_text_product_item">
+                        <img src="./asset/img/dress/1df5g4g321g6841gdf8g451gd8r4gC.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>لباس عروس پفی گل گلی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>2300000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>44 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="count_prodcut_box">
-                        <h4> تعداد: </h4>
-                        <h5>44 عدد</h5>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
                     </div>
-                </div>
-                  </div>
-                   <div class="buttons_product_item">
-                   <div class="edite_delete_buttons_product_item">
-                    <a class="edit_product_item" href="#">ویرایش</a>
-                    <a class="delete_product_item" href="#">حذف محصول</a>
-                   </div>
-                    <a class="disable_product_item" href="#">غیر فعال</a>
-                   </div>
                 </div>
                 <div class="prodcut_items_box">
-                  <div class="img_text_product_item">
-                    <img src="./asset/img/dress/1df5g4g321g6841gdf8g451gd8r4gC.jpg" alt="">
-                    <div class="text_prodcut_item_box">
-                    <h3>لباس عروس پفی گل گلی</h3>
-                    <div class="price_prodcut_box">
-                        <h4> قیمت: </h4>
-                        <h5>2300000 تومان</h5>
+                    <div class="img_text_product_item">
+                        <img src="./asset/img/dress/1df5g4g321g6841gdf8g451gd8r4gC.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>لباس عروس پفی گل گلی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>2300000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>44 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="count_prodcut_box">
-                        <h4> تعداد: </h4>
-                        <h5>44 عدد</h5>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
                     </div>
-                </div>
-                  </div>
-                   <div class="buttons_product_item">
-                   <div class="edite_delete_buttons_product_item">
-                    <a class="edit_product_item" href="#">ویرایش</a>
-                    <a class="delete_product_item" href="#">حذف محصول</a>
-                   </div>
-                    <a class="disable_product_item" href="#">غیر فعال</a>
-                   </div>
                 </div>
                 <div class="prodcut_items_box">
-                  <div class="img_text_product_item">
-                    <img src="./asset/img/dress/1df5g4g321g6841gdf8g451gd8r4gC.jpg" alt="">
-                    <div class="text_prodcut_item_box">
-                    <h3>لباس عروس پفی گل گلی</h3>
-                    <div class="price_prodcut_box">
-                        <h4> قیمت: </h4>
-                        <h5>2300000 تومان</h5>
+                    <div class="img_text_product_item">
+                        <img src="./asset/img/dress/1df5g4g321g6841gdf8g451gd8r4gC.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>لباس عروس پفی گل گلی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>2300000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>44 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="count_prodcut_box">
-                        <h4> تعداد: </h4>
-                        <h5>44 عدد</h5>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
                     </div>
-                </div>
-                  </div>
-                   <div class="buttons_product_item">
-                   <div class="edite_delete_buttons_product_item">
-                    <a class="edit_product_item" href="#">ویرایش</a>
-                    <a class="delete_product_item" href="#">حذف محصول</a>
-                   </div>
-                    <a class="disable_product_item" href="#">غیر فعال</a>
-                   </div>
                 </div>
                 <div class="prodcut_items_box">
-                  <div class="img_text_product_item">
-                    <img src="./asset/img/dress/1df5g4g321g6841gdf8g451gd8r4gC.jpg" alt="">
-                    <div class="text_prodcut_item_box">
-                    <h3>لباس عروس پفی گل گلی</h3>
-                    <div class="price_prodcut_box">
-                        <h4> قیمت: </h4>
-                        <h5>2300000 تومان</h5>
+                    <div class="img_text_product_item">
+                        <img src="./asset/img/dress/1df5g4g321g6841gdf8g451gd8r4gC.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>لباس عروس پفی گل گلی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>2300000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>44 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="count_prodcut_box">
-                        <h4> تعداد: </h4>
-                        <h5>44 عدد</h5>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
                     </div>
                 </div>
-                  </div>
-                   <div class="buttons_product_item">
-                   <div class="edite_delete_buttons_product_item">
-                    <a class="edit_product_item" href="#">ویرایش</a>
-                    <a class="delete_product_item" href="#">حذف محصول</a>
-                   </div>
-                    <a class="disable_product_item" href="#">غیر فعال</a>
-                   </div>
-                </div>
-              
+
             </div>
             <div class="subdivs" data-id="product-taj-submenu">
-       
+
                 <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/taj/13zx5c45g15jy4c3j1.png" alt="">
-                      <div class="text_prodcut_item_box">
-                        <h3>تاج سلطنتی مرواریدی</h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>250000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4> تعداد: </h4>
-                          <h5>23 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/taj/13zx5c45g15jy4c3j1.png" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>تاج سلطنتی مرواریدی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>250000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>23 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
                 <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/taj/13zx5c45g15jy4c3j1.png" alt="">
-                      <div class="text_prodcut_item_box">
-                        <h3>تاج سلطنتی مرواریدی</h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>250000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4> تعداد: </h4>
-                          <h5>23 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/taj/13zx5c45g15jy4c3j1.png" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>تاج سلطنتی مرواریدی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>250000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>23 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
                 <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/taj/13zx5c45g15jy4c3j1.png" alt="">
-                      <div class="text_prodcut_item_box">
-                        <h3>تاج سلطنتی مرواریدی</h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>250000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4> تعداد: </h4>
-                          <h5>23 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/taj/13zx5c45g15jy4c3j1.png" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>تاج سلطنتی مرواریدی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>250000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>23 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
                 <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/taj/13zx5c45g15jy4c3j1.png" alt="">
-                      <div class="text_prodcut_item_box">
-                        <h3>تاج سلطنتی مرواریدی</h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>250000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4> تعداد: </h4>
-                          <h5>23 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/taj/13zx5c45g15jy4c3j1.png" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>تاج سلطنتی مرواریدی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>250000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>23 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
                 <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/taj/13zx5c45g15jy4c3j1.png" alt="">
-                      <div class="text_prodcut_item_box">
-                        <h3>تاج سلطنتی مرواریدی</h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>250000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4> تعداد: </h4>
-                          <h5>23 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/taj/13zx5c45g15jy4c3j1.png" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>تاج سلطنتی مرواریدی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>250000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>23 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
-              
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
+
             </div>
             <div class="subdivs" data-id="product-jewlry-submenu">
                 <div class="prodcut_items_box">
-                  <div class="img_text_product_item">
-                    <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
-                    <div class="text_prodcut_item_box">
-                    <h3>ست گردنبند و گوشواره طلا سفید</h3>
-                    <div class="price_prodcut_box">
-                        <h4> قیمت: </h4>
-                        <h5>3100000000 تومان</h5>
+                    <div class="img_text_product_item">
+                        <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>ست گردنبند و گوشواره طلا سفید</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>3100000000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>5 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="count_prodcut_box">
-                        <h4>تعداد:</h4>
-                        <h5>5 عدد</h5>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
                     </div>
-                </div>
-                  </div>
-                   <div class="buttons_product_item">
-                   <div class="edite_delete_buttons_product_item">
-                    <a class="edit_product_item" href="#">ویرایش</a>
-                    <a class="delete_product_item" href="#">حذف محصول</a>
-                   </div>
-                    <a class="disable_product_item" href="#">غیر فعال</a>
-                   </div>
                 </div>
                 <div class="prodcut_items_box">
-                  <div class="img_text_product_item">
-                    <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
-                    <div class="text_prodcut_item_box">
-                    <h3>ست گردنبند و گوشواره طلا سفید</h3>
-                    <div class="price_prodcut_box">
-                        <h4> قیمت: </h4>
-                        <h5>3100000000 تومان</h5>
+                    <div class="img_text_product_item">
+                        <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>ست گردنبند و گوشواره طلا سفید</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>3100000000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>5 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="count_prodcut_box">
-                        <h4>تعداد:</h4>
-                        <h5>5 عدد</h5>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
                     </div>
-                </div>
-                  </div>
-                   <div class="buttons_product_item">
-                   <div class="edite_delete_buttons_product_item">
-                    <a class="edit_product_item" href="#">ویرایش</a>
-                    <a class="delete_product_item" href="#">حذف محصول</a>
-                   </div>
-                    <a class="disable_product_item" href="#">غیر فعال</a>
-                   </div>
                 </div>
                 <div class="prodcut_items_box">
-                  <div class="img_text_product_item">
-                    <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
-                    <div class="text_prodcut_item_box">
-                    <h3>ست گردنبند و گوشواره طلا سفید</h3>
-                    <div class="price_prodcut_box">
-                        <h4> قیمت: </h4>
-                        <h5>3100000000 تومان</h5>
+                    <div class="img_text_product_item">
+                        <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>ست گردنبند و گوشواره طلا سفید</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>3100000000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>5 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="count_prodcut_box">
-                        <h4>تعداد:</h4>
-                        <h5>5 عدد</h5>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
                     </div>
-                </div>
-                  </div>
-                   <div class="buttons_product_item">
-                   <div class="edite_delete_buttons_product_item">
-                    <a class="edit_product_item" href="#">ویرایش</a>
-                    <a class="delete_product_item" href="#">حذف محصول</a>
-                   </div>
-                    <a class="disable_product_item" href="#">غیر فعال</a>
-                   </div>
                 </div>
                 <div class="prodcut_items_box">
-                  <div class="img_text_product_item">
-                    <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
-                    <div class="text_prodcut_item_box">
-                    <h3>ست گردنبند و گوشواره طلا سفید</h3>
-                    <div class="price_prodcut_box">
-                        <h4> قیمت: </h4>
-                        <h5>3100000000 تومان</h5>
+                    <div class="img_text_product_item">
+                        <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>ست گردنبند و گوشواره طلا سفید</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>3100000000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>5 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="count_prodcut_box">
-                        <h4>تعداد:</h4>
-                        <h5>5 عدد</h5>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
                     </div>
-                </div>
-                  </div>
-                   <div class="buttons_product_item">
-                   <div class="edite_delete_buttons_product_item">
-                    <a class="edit_product_item" href="#">ویرایش</a>
-                    <a class="delete_product_item" href="#">حذف محصول</a>
-                   </div>
-                    <a class="disable_product_item" href="#">غیر فعال</a>
-                   </div>
                 </div>
                 <div class="prodcut_items_box">
-                  <div class="img_text_product_item">
-                    <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
-                    <div class="text_prodcut_item_box">
-                    <h3>ست گردنبند و گوشواره طلا سفید</h3>
-                    <div class="price_prodcut_box">
-                        <h4> قیمت: </h4>
-                        <h5>3100000000 تومان</h5>
+                    <div class="img_text_product_item">
+                        <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>ست گردنبند و گوشواره طلا سفید</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>3100000000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>5 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="count_prodcut_box">
-                        <h4>تعداد:</h4>
-                        <h5>5 عدد</h5>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
                     </div>
-                </div>
-                  </div>
-                   <div class="buttons_product_item">
-                   <div class="edite_delete_buttons_product_item">
-                    <a class="edit_product_item" href="#">ویرایش</a>
-                    <a class="delete_product_item" href="#">حذف محصول</a>
-                   </div>
-                    <a class="disable_product_item" href="#">غیر فعال</a>
-                   </div>
                 </div>
                 <div class="prodcut_items_box">
-                  <div class="img_text_product_item">
-                    <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
-                    <div class="text_prodcut_item_box">
-                    <h3>ست گردنبند و گوشواره طلا سفید</h3>
-                    <div class="price_prodcut_box">
-                        <h4> قیمت: </h4>
-                        <h5>3100000000 تومان</h5>
+                    <div class="img_text_product_item">
+                        <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>ست گردنبند و گوشواره طلا سفید</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>3100000000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>5 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="count_prodcut_box">
-                        <h4>تعداد:</h4>
-                        <h5>5 عدد</h5>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
                     </div>
-                </div>
-                  </div>
-                   <div class="buttons_product_item">
-                   <div class="edite_delete_buttons_product_item">
-                    <a class="edit_product_item" href="#">ویرایش</a>
-                    <a class="delete_product_item" href="#">حذف محصول</a>
-                   </div>
-                    <a class="disable_product_item" href="#">غیر فعال</a>
-                   </div>
                 </div>
                 <div class="prodcut_items_box">
-                  <div class="img_text_product_item">
-                    <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
-                    <div class="text_prodcut_item_box">
-                    <h3>ست گردنبند و گوشواره طلا سفید</h3>
-                    <div class="price_prodcut_box">
-                        <h4> قیمت: </h4>
-                        <h5>3100000000 تومان</h5>
+                    <div class="img_text_product_item">
+                        <img src="./asset/img/jewellery/4d6a174a245375adeba2e9e9c245d5fc.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>ست گردنبند و گوشواره طلا سفید</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>3100000000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>5 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="count_prodcut_box">
-                        <h4>تعداد:</h4>
-                        <h5>5 عدد</h5>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
                     </div>
                 </div>
-                  </div>
-                   <div class="buttons_product_item">
-                   <div class="edite_delete_buttons_product_item">
-                    <a class="edit_product_item" href="#">ویرایش</a>
-                    <a class="delete_product_item" href="#">حذف محصول</a>
-                   </div>
-                    <a class="disable_product_item" href="#">غیر فعال</a>
-                   </div>
-                </div>
-                
-              
+
+
             </div>
             <div class="subdivs" data-id="product-shose-submenu">
                 <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/shoes/1e285b7e5f5b4259.1.jpg" alt="">
-                      <div class="text_prodcut_item_box">
-                      <h3>کفش سفید پاشنه 4 سانتی</h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>320000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4>تعداد:</h4>
-                          <h5>29 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/shoes/1e285b7e5f5b4259.1.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>کفش سفید پاشنه 4 سانتی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>320000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>29 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
-                  <div class="prodcut_items_box">
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
+                <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/shoes/1e285b7e5f5b4259.1.jpg" alt="">
-                      <div class="text_prodcut_item_box">
-                      <h3>کفش سفید پاشنه 4 سانتی</h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>320000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4>تعداد:</h4>
-                          <h5>29 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/shoes/1e285b7e5f5b4259.1.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>کفش سفید پاشنه 4 سانتی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>320000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>29 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
-                  <div class="prodcut_items_box">
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
+                <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/shoes/1e285b7e5f5b4259.1.jpg" alt="">
-                      <div class="text_prodcut_item_box">
-                      <h3>کفش سفید پاشنه 4 سانتی</h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>320000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4>تعداد:</h4>
-                          <h5>29 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/shoes/1e285b7e5f5b4259.1.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>کفش سفید پاشنه 4 سانتی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>320000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>29 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
-                  <div class="prodcut_items_box">
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
+                <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/shoes/1e285b7e5f5b4259.1.jpg" alt="">
-                      <div class="text_prodcut_item_box">
-                      <h3>کفش سفید پاشنه 4 سانتی</h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>320000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4>تعداد:</h4>
-                          <h5>29 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/shoes/1e285b7e5f5b4259.1.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>کفش سفید پاشنه 4 سانتی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>320000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>29 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
-                  <div class="prodcut_items_box">
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
+                <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/shoes/1e285b7e5f5b4259.1.jpg" alt="">
-                      <div class="text_prodcut_item_box">
-                      <h3>کفش سفید پاشنه 4 سانتی</h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>320000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4>تعداد:</h4>
-                          <h5>29 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/shoes/1e285b7e5f5b4259.1.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>کفش سفید پاشنه 4 سانتی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>320000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>29 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
-                  <div class="prodcut_items_box">
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
+                <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/shoes/1e285b7e5f5b4259.1.jpg" alt="">
-                      <div class="text_prodcut_item_box">
-                      <h3>کفش سفید پاشنه 4 سانتی</h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>320000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4>تعداد:</h4>
-                          <h5>29 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/shoes/1e285b7e5f5b4259.1.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>کفش سفید پاشنه 4 سانتی</h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>320000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4>تعداد:</h4>
+                                <h5>29 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
             </div>
             <div class="subdivs" data-id="product-toor-submenu">
-         
+
                 <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/toor/132xcv4s65d3v4zx3vC.jpg" alt="">
-                      <div class="text_prodcut_item_box">
-                      <h3>تور سفید گیپوری
-                      </h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>2900000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4> تعداد: </h4>
-                          <h5>47 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/toor/132xcv4s65d3v4zx3vC.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>تور سفید گیپوری
+                            </h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>2900000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>47 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
                 <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/toor/132xcv4s65d3v4zx3vC.jpg" alt="">
-                      <div class="text_prodcut_item_box">
-                      <h3>تور سفید گیپوری
-                      </h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>2900000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4> تعداد: </h4>
-                          <h5>47 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/toor/132xcv4s65d3v4zx3vC.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>تور سفید گیپوری
+                            </h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>2900000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>47 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
                 <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/toor/132xcv4s65d3v4zx3vC.jpg" alt="">
-                      <div class="text_prodcut_item_box">
-                      <h3>تور سفید گیپوری
-                      </h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>2900000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4> تعداد: </h4>
-                          <h5>47 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/toor/132xcv4s65d3v4zx3vC.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>تور سفید گیپوری
+                            </h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>2900000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>47 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
                 <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/toor/132xcv4s65d3v4zx3vC.jpg" alt="">
-                      <div class="text_prodcut_item_box">
-                      <h3>تور سفید گیپوری
-                      </h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>2900000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4> تعداد: </h4>
-                          <h5>47 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/toor/132xcv4s65d3v4zx3vC.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>تور سفید گیپوری
+                            </h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>2900000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>47 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
                 <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/toor/132xcv4s65d3v4zx3vC.jpg" alt="">
-                      <div class="text_prodcut_item_box">
-                      <h3>تور سفید گیپوری
-                      </h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>2900000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4> تعداد: </h4>
-                          <h5>47 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/toor/132xcv4s65d3v4zx3vC.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>تور سفید گیپوری
+                            </h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>2900000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>47 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
                 <div class="prodcut_items_box">
                     <div class="img_text_product_item">
-                      <img src="./asset/img/toor/132xcv4s65d3v4zx3vC.jpg" alt="">
-                      <div class="text_prodcut_item_box">
-                      <h3>تور سفید گیپوری
-                      </h3>
-                      <div class="price_prodcut_box">
-                          <h4> قیمت: </h4>
-                          <h5>2900000 تومان</h5>
-                      </div>
-                      <div class="count_prodcut_box">
-                          <h4> تعداد: </h4>
-                          <h5>47 عدد</h5>
-                      </div>
-                  </div>
+                        <img src="./asset/img/toor/132xcv4s65d3v4zx3vC.jpg" alt="">
+                        <div class="text_prodcut_item_box">
+                            <h3>تور سفید گیپوری
+                            </h3>
+                            <div class="price_prodcut_box">
+                                <h4> قیمت: </h4>
+                                <h5>2900000 تومان</h5>
+                            </div>
+                            <div class="count_prodcut_box">
+                                <h4> تعداد: </h4>
+                                <h5>47 عدد</h5>
+                            </div>
+                        </div>
                     </div>
-                     <div class="buttons_product_item">
-                     <div class="edite_delete_buttons_product_item">
-                      <a class="edit_product_item" href="#">ویرایش</a>
-                      <a class="delete_product_item" href="#">حذف محصول</a>
-                     </div>
-                      <a class="disable_product_item" href="#">غیر فعال</a>
-                     </div>
-                  </div>
+                    <div class="buttons_product_item">
+                        <div class="edite_delete_buttons_product_item">
+                            <a class="edit_product_item" href="#">ویرایش</a>
+                            <a class="delete_product_item" href="#">حذف محصول</a>
+                        </div>
+                        <a class="disable_product_item" href="#">غیر فعال</a>
+                    </div>
+                </div>
             </div>
         </main>
         <main class="comment_main" data-id="comment">
-                <div class="comment_items_box">
-                  <div class="img_text_comment_item">
+            <div class="comment_items_box">
+                <div class="img_text_comment_item">
                     <img src="./asset/img/comment_5.jpg" alt="">
                     <h3>سمانه بهستانی</h3>
                 </div>
                 <div class="comment_text">
-                    <p>سلام من از لباس عروس مدل بلند نیم کلوش و کفش پاشنه بلند 5 سانتی با گل گیپوری رو از این سایت خریداری کردم خب اولش خیلی استرس داشتم چون همه میدونن که لباس عروس یه انتخاب خیلی مهمه برای بهترین شب زندگی آدم رو نمیشه ریسک کرد برای اینکه یه بار خوب در نیاد ولی شاید باورتون نشه از خرید حضوری برای من خیلی بهتر بود و واقعا احساس خوشگلی رو تو شب عروسیم احساس کردم مرسی از عوامل عروس خانوم </p>
+                    <p>سلام من از لباس عروس مدل بلند نیم کلوش و کفش پاشنه بلند 5 سانتی با گل گیپوری رو از این سایت
+                        خریداری کردم خب اولش خیلی استرس داشتم چون همه میدونن که لباس عروس یه انتخاب خیلی مهمه برای
+                        بهترین شب زندگی آدم رو نمیشه ریسک کرد برای اینکه یه بار خوب در نیاد ولی شاید باورتون نشه از خرید
+                        حضوری برای من خیلی بهتر بود و واقعا احساس خوشگلی رو تو شب عروسیم احساس کردم مرسی از عوامل عروس
+                        خانوم </p>
                 </div>
-                   <div class="buttons_comment_item">
+                <div class="buttons_comment_item">
                     <a class="disable_comment_item" href="#">نمایش در سایت</a>
-                   </div>
                 </div>
-                <div class="comment_items_box">
-                  <div class="img_text_comment_item">
+            </div>
+            <div class="comment_items_box">
+                <div class="img_text_comment_item">
                     <img src="./asset/img/comment_8.jpg" alt="">
                     <h3>متین بهرام پور</h3>
                 </div>
                 <div class="comment_text">
                     <p>
-                        سلام من برای عروسی مون تور و اکسسوری های خانمم رو از عروس خانوم خرید و بشدت بعد از دیدن هدیه هایی که براش خریده بودم سوپرایز شد و خوشش اومدهم بود بنظرم تنوع محصولات و کیفیت خیلی خوبشون باعث میشه هر کسی میاد به این سایت دست خالی برنگرده.                   
-                     </p>
+                        سلام من برای عروسی مون تور و اکسسوری های خانمم رو از عروس خانوم خرید و بشدت بعد از دیدن هدیه
+                        هایی که براش خریده بودم سوپرایز شد و خوشش اومدهم بود بنظرم تنوع محصولات و کیفیت خیلی خوبشون باعث
+                        میشه هر کسی میاد به این سایت دست خالی برنگرده.
+                    </p>
                 </div>
-                   <div class="buttons_comment_item">
+                <div class="buttons_comment_item">
                     <a class="disable_comment_item" href="#">نمایش در سایت</a>
-                   </div>
                 </div>
-                <div class="comment_items_box">
-                  <div class="img_text_comment_item">
+            </div>
+            <div class="comment_items_box">
+                <div class="img_text_comment_item">
                     <img src="./asset/img/comment_6.jpg" alt="">
                     <h3>معصومه قربان نژاد</h3>
                 </div>
                 <div class="comment_text">
                     <p>
-                        من خیلی استرس داشتم که نتونم اکسسوری های خاص برای عروسیم پیدا کنم ولی وقتی دوسم عروس خانوم رو بهم معرفی کرد دیگه کلا نظرم عوض شد با اینکه خودم بشدت مخالف خرید اینترنتی هستم ولی بشدت راضیم و کلا نظر من راجب خریدای اینترنتی عوض شد.
+                        من خیلی استرس داشتم که نتونم اکسسوری های خاص برای عروسیم پیدا کنم ولی وقتی دوسم عروس خانوم رو
+                        بهم معرفی کرد دیگه کلا نظرم عوض شد با اینکه خودم بشدت مخالف خرید اینترنتی هستم ولی بشدت راضیم و
+                        کلا نظر من راجب خریدای اینترنتی عوض شد.
                     </p>
                 </div>
-                   <div class="buttons_comment_item">
+                <div class="buttons_comment_item">
                     <a class="disable_comment_item" href="#">نمایش در سایت</a>
-                   </div>
                 </div>
-                <div class="comment_items_box">
-                  <div class="img_text_comment_item">
+            </div>
+            <div class="comment_items_box">
+                <div class="img_text_comment_item">
                     <img src="./asset/img/comment_4.jpg" alt="">
                     <h3>مهرانه احمدی</h3>
                 </div>
                 <div class="comment_text">
                     <p>
-                        سلام من از لباس عروس مدل بلند نیم کلوش و کفش پاشنه بلند 5 سانتی با گل گیپوری رو از این سایت خریداری کردم خب اولش خیلی استرس داشتم چون همه میدونن که لباس عروس یه انتخاب خیلی مهمه برای بهترین شب زندگی آدم رو نمیشه ریسک کرد برای اینکه یه بار خوب در نیاد ولی شاید باورتون نشه از خرید حضوری برای من خیلی بهتر بود و واقعا احساس خوشگلی رو تو شب عروسیم احساس کردم مرسی از عوامل عروس خانوم 
+                        سلام من از لباس عروس مدل بلند نیم کلوش و کفش پاشنه بلند 5 سانتی با گل گیپوری رو از این سایت
+                        خریداری کردم خب اولش خیلی استرس داشتم چون همه میدونن که لباس عروس یه انتخاب خیلی مهمه برای
+                        بهترین شب زندگی آدم رو نمیشه ریسک کرد برای اینکه یه بار خوب در نیاد ولی شاید باورتون نشه از خرید
+                        حضوری برای من خیلی بهتر بود و واقعا احساس خوشگلی رو تو شب عروسیم احساس کردم مرسی از عوامل عروس
+                        خانوم
                     </p>
-                    </div>
-                   <div class="buttons_comment_item">
-                    <a class="disable_comment_item" href="#">نمایش در سایت</a>
-                   </div>
                 </div>
-                <div class="comment_items_box">
-                  <div class="img_text_comment_item">
+                <div class="buttons_comment_item">
+                    <a class="disable_comment_item" href="#">نمایش در سایت</a>
+                </div>
+            </div>
+            <div class="comment_items_box">
+                <div class="img_text_comment_item">
                     <img src="./asset/img/comment_3.jpg" alt="">
                     <h3>طناز احمد زاده</h3>
                 </div>
                 <div class="comment_text">
-                    <p> یه چیزی که باعث شد من این سایت رو برای خرید لباس عروسم انتخاب کنم کیفیت بالای محصولات و نشون دادن عکسای خوب از اون محصول و قیمت به نسبت مناسب بود که منو جذب خودش کرد و اصلا از خریدم پشیمون نشدم به همه پیشنهاد میدم بیان تو این سایت بهترین شب زندگیشونو به یه سطح خیلی بهتر برسونن و مثل خورشید بدرخشن. </p>
+                    <p> یه چیزی که باعث شد من این سایت رو برای خرید لباس عروسم انتخاب کنم کیفیت بالای محصولات و نشون
+                        دادن عکسای خوب از اون محصول و قیمت به نسبت مناسب بود که منو جذب خودش کرد و اصلا از خریدم پشیمون
+                        نشدم به همه پیشنهاد میدم بیان تو این سایت بهترین شب زندگیشونو به یه سطح خیلی بهتر برسونن و مثل
+                        خورشید بدرخشن. </p>
                 </div>
-                   <div class="buttons_comment_item">
+                <div class="buttons_comment_item">
                     <a class="disable_comment_item" href="#">نمایش در سایت</a>
-                   </div>
                 </div>
-                <div class="comment_items_box">
-                  <div class="img_text_comment_item">
+            </div>
+            <div class="comment_items_box">
+                <div class="img_text_comment_item">
                     <img src="./asset/img/comment_5.jpg" alt="">
                     <h3>سمانه بهستانی</h3>
                 </div>
                 <div class="comment_text">
-                    <p>سلام من از لباس عروس مدل بلند نیم کلوش و کفش پاشنه بلند 5 سانتی با گل گیپوری رو از این سایت خریداری کردم خب اولش خیلی استرس داشتم چون همه میدونن که لباس عروس یه انتخاب خیلی مهمه برای بهترین شب زندگی آدم رو نمیشه ریسک کرد برای اینکه یه بار خوب در نیاد ولی شاید باورتون نشه از خرید حضوری برای من خیلی بهتر بود و واقعا احساس خوشگلی رو تو شب عروسیم احساس کردم مرسی از عوامل عروس خانوم </p>
+                    <p>سلام من از لباس عروس مدل بلند نیم کلوش و کفش پاشنه بلند 5 سانتی با گل گیپوری رو از این سایت
+                        خریداری کردم خب اولش خیلی استرس داشتم چون همه میدونن که لباس عروس یه انتخاب خیلی مهمه برای
+                        بهترین شب زندگی آدم رو نمیشه ریسک کرد برای اینکه یه بار خوب در نیاد ولی شاید باورتون نشه از خرید
+                        حضوری برای من خیلی بهتر بود و واقعا احساس خوشگلی رو تو شب عروسیم احساس کردم مرسی از عوامل عروس
+                        خانوم </p>
                 </div>
-                   <div class="buttons_comment_item">
+                <div class="buttons_comment_item">
                     <a class="disable_comment_item" href="#">نمایش در سایت</a>
-                   </div>
                 </div>
-          
+            </div>
+
         </main>
         <main class="order_main" data-id="order"></main>
-        <main data-id="user">تاج shodam ta to azad bashi</main>
+        <main data-id="addProduct">
+            <form class="formAddProduct" action="">
+                <div class="add-product-inputs">
+                    <div class="product-name inputdiv">
+                        <label>نام محصول</label>
+                        <input type="text">
+                    </div>
+                    <div class="product-type inputdiv">
+                        <label>نوع محصول</label>
+                        <input type="text">
+                    </div>
+                    <div class="product-count inputdiv">
+                        <label>تعداد محصول</label>
+                        <input type="text">
+                    </div>
+                    <div class="product-price inputdiv">
+                        <label>قیمت محصول</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="add-product-input-bottom">
+                   
+                    <div class="image_uploader">
+                        <label class="inputLable" for="inputTag1">
+                            <div>
+                                <span class="textInput">انتخاب عکس ویترین</span><br />
+                                <i class="fa fa-2x fa-camera icon_prev"></i>
+                            </div>
+                            <input id="inputTag1" type="file" /><br />
+                            <img  class="image-prev" src="./asset/img/comment_1.jpg">
+                        </label>
+                    </div>
+            
+                    <div class="image_uploader">
+                        <label class="inputLable" for="inputTag2">
+                            <div>
+                                <span class="textInput">انتخاب عکس بزرگ</span><br />
+                                <i class="fa fa-2x fa-camera icon_prev"></i>
+                            </div>
+                            <input id="inputTag2" type="file" /><br />
+                            <img  class="image-prev" src="./asset/img/comment_5.jpg">
+                        </label>
+                    </div>
+            
+   
+                    <div class="image_uploader">
+                        <label class="inputLable" for="inputTag3">
+                            <div>
+                                <span class="textInput">انتخاب عکس کوچک</span><br />
+                                <i class="fa fa-2x fa-camera icon_prev"></i>
+                            </div>
+                            <input id="inputTag3" type="file" /><br />
+                            <img class="image-prev" src="asset/img/comment_3.jpg">
+                        </label>
+                    </div>
+             
+                    <div class="image_uploader">
+                        <label class="inputLable" for="inputTag4">
+                            <div>
+                                <span class="textInput">انتخاب عکس کوچک</span><br />
+                                <i class="fa fa-2x fa-camera icon_prev"></i>
+                            </div>
+                            <input id="inputTag4" type="file" /><br />
+                            <img class="image-prev" src="asset/img/comment_4.jpg">
+                        </label>
+                    </div>
+            
+            </div>
+
+                <input type="submit" class="button" value="ثبت کالا جدید">
+
+                </div>
+
+            </form>
+        </main>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.0/dist/Chart.min.js"></script>
 
     <!-- <script src="js/main.js"></script> -->
-<script>   
-var ctx = document.getElementById("myChart").getContext("2d");
-      var myChart = new Chart(ctx, {
-        type: 'polarArea',
-        data: {
-          labels: ["لباس عروس", "تاج", "کفش ", "تور", "جواهرات "],
-          datasets: [
-            {
-              label: "",
-              data: [15, 2, 13, 5, 10],
-              backgroundColor: [
-                "rgba(255, 99, 132, 1)",
-                "rgba(54, 162, 235, 1)",
-                "rgba(255, 206, 86, 1)",
-                "rgba(75, 192, 192, 1)",
-                "rgba(153, 102, 255, 1)",
-              ],
-              
-              borderWidth: 1
+    <script>
+let inputs = document.querySelectorAll("input[type=file]");
+
+inputs.forEach((input, index) => {
+    let textInput = document.querySelectorAll('.textInput')[index];
+    let imgPrev = document.querySelectorAll('.image-prev')[index];
+    let iconPrev = document.querySelectorAll('.icon_prev')[index];
+
+    input.addEventListener("change", () => {
+        let inputImage = input.files[0];
+        if (inputImage) {
+            const reader = new FileReader();
+            iconPrev.style.display = 'none';
+            imgPrev.style.display = 'block';
+            textInput.style.display = 'none';
+
+            reader.addEventListener('load', function () {
+                imgPrev.setAttribute('src', this.result);
+            });
+            reader.readAsDataURL(inputImage);
+        } else {
+            iconPrev.style.display = 'block';
+            imgPrev.style.display = 'none';
+            textInput.style.display = 'block';
+            imgPrev.setAttribute('src', '');
+        }
+    });
+});
+        //
+
+
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var myChart = new Chart(ctx, {
+            type: 'polarArea',
+            data: {
+                labels: ["لباس عروس", "تاج", "کفش ", "تور", "جواهرات "],
+                datasets: [
+                    {
+                        label: "",
+                        data: [15, 2, 13, 5, 10],
+                        backgroundColor: [
+                            "rgba(255, 99, 132, 1)",
+                            "rgba(54, 162, 235, 1)",
+                            "rgba(255, 206, 86, 1)",
+                            "rgba(75, 192, 192, 1)",
+                            "rgba(153, 102, 255, 1)",
+                        ],
+
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                scales: {
+
+                }
             }
-          ]
-        },
-        options: {
-          scales: {
-            
-          }
+        });
+
+
+        function toggleMenu() {
+            const togglemenu = document.querySelector('.menu-profile-dashboard');
+            togglemenu.classList.toggle("active");
         }
-      });
+        // search
+        let input = document.querySelector('.inputSearch');
+        let btnSearch = document.querySelector('.btnSearch');
+        let search = document.querySelector('.search');
+        console.log(btnSearch)
+        btnSearch.addEventListener('click', function () {
+            console.log('si')
+            search.classList.toggle('active');
+        })
 
 
-      function toggleMenu() {
-    const togglemenu = document.querySelector('.menu-profile-dashboard');
-    togglemenu.classList.toggle("active");
-}
-  // search
-  let input=document.querySelector('.inputSearch');
-let btnSearch=document.querySelector('.btnSearch');
-let search=document.querySelector('.search');
-console.log(btnSearch)
-btnSearch.addEventListener('click',function(){
-    console.log('si')
-    search.classList.toggle('active');
-})
+        ///page context
+        const limenu = document.querySelectorAll('.li-menu-dashboard')
+        const mains = document.querySelectorAll('main');
+
+        for (let i = 0; i < limenu.length; i++) {
+            limenu[i].addEventListener('click', () => {
+                for (let a = 0; a < limenu.length; a++) {
+                    limenu[a].classList.remove('active-dashboard');
+                }
+                limenu[i].classList.add('active-dashboard');
 
 
-///page context
-const limenu=document.querySelectorAll('.li-menu-dashboard')
-const mains=document.querySelectorAll('main');
+                const target = limenu[i].getAttribute('data-name');
 
-for(let i=0; i<limenu.length;i++){
-    limenu[i].addEventListener('click',()=>{
-        for(let a=0;a<limenu.length;a++){
-            limenu[a].classList.remove('active-dashboard');
+                for (let k = 0; k < mains.length; k++) {
+                    mains[k].style.display = 'none';
+                    if (target == mains[k].getAttribute('data-id')) {
+                        mains[k].style.display = 'block'
+                    }
+                }
+            })
         }
-        limenu[i].classList.add('active-dashboard');
 
 
-        const target=limenu[i].getAttribute('data-name');
+        ///submenu tab
+        const lisubmenu = document.querySelectorAll('.product-menu li')
+        const subdivs = document.querySelectorAll('.subdivs');
 
-        for(let k=0;k<mains.length;k++){
-            mains[k].style.display='none';
-            if(target==mains[k].getAttribute('data-id')){
-                mains[k].style.display='block'
-            }
+        for (let i = 0; i < lisubmenu.length; i++) {
+            lisubmenu[i].addEventListener('click', () => {
+                for (let a = 0; a < lisubmenu.length; a++) {
+                    lisubmenu[a].classList.remove('active-submenu');
+                }
+                lisubmenu[i].classList.add('active-submenu');
+
+
+                const target = lisubmenu[i].getAttribute('data-name');
+
+                for (let k = 0; k < subdivs.length; k++) {
+                    subdivs[k].style.display = 'none';
+                    if (target == subdivs[k].getAttribute('data-id')) {
+                        subdivs[k].style.display = 'block'
+                    }
+                }
+            })
         }
-    })
-}
 
 
-///submenu tab
-const lisubmenu=document.querySelectorAll('.product-menu li')
-const subdivs=document.querySelectorAll('.subdivs');
 
-for(let i=0; i<lisubmenu.length;i++){
-    lisubmenu[i].addEventListener('click',()=>{
-        for(let a=0;a<lisubmenu.length;a++){
-            lisubmenu[a].classList.remove('active-submenu');
-        }
-        lisubmenu[i].classList.add('active-submenu');
-
-
-        const target=lisubmenu[i].getAttribute('data-name');
-
-        for(let k=0;k<subdivs.length;k++){
-            subdivs[k].style.display='none';
-            if(target==subdivs[k].getAttribute('data-id')){
-                subdivs[k].style.display='block'
-            }
-        }
-    })
-}
-</script>        
+    </script>
 </body>
+
 </html>
